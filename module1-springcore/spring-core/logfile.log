@@ -1,0 +1,4 @@
+
+INFO  | 2024-03-16 22:02:49 | [main] busycoder.Main (Main.java:10) - code is working till line no 10
+ERROR | 2024-03-16 22:02:49 | [main] busycoder.Main (Main.java:17) - ex occured For input string: "123a" 
+ERROR | 2024-03-16 22:03:33 | [main] busycoder.Main (Main.java:17) - ex occured For input string: "123a" 
