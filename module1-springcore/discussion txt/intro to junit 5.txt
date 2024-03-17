@@ -1,0 +1,70 @@
+Introduction to junit 5
+-----------------------
+@Test
+@DisplayName
+@BeforeEach
+@AfterEach
+@BeforeAl
+@AfterAll
+@Disable
+@TestMethodOrder
+@RepeatTest
+@Tag
+@ParameterizedTest
+
+@BeforeEach : To execute any logic once per test method before starting test method.
+@AfterEach  : To execute any logic once per test method after finishing test method.
+
+@BeforeAll : To execute any logic once per test case before starting.
+@AfterAll  : To execute any logic once per test case after finishing.
+
+
+
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+
+@EnabledOnOs(OS.LINUX)
+@EnabledOnJre(JRE.JAVA_15)
+@DisplayName("test for add employee")
+@Order(value = 1)
+
+AssertEquals()
+assertNotNull(object):
+assertNull(object):
+assertTrue()/assertFalse()
+assertAll(Executable...) 
+assertThrow()
+assertNotThrow()
+assertTimeOut()
+
+   
+ <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.6.2</version>
+            <scope>test</scope>
+</dependency>
+<dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.6.2</version>
+            <scope>test</scope>
+</dependency>
+
+
+
+ <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                <configuration>
+                    <!-- include tags -->
+                    <groups>prod</groups>
+                    <!-- exclude tags -->
+                    <excludedGroups>dev</excludedGroups>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+	

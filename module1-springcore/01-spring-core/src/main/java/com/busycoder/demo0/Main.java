@@ -1,9 +1,14 @@
-package com.busycoder;
+package com.busycoder.demo0;
+
+//import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.Logger;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 public class Main {
 
     private static Logger logger=LoggerFactory.getLogger(Main.class);
+  //  private static Logger logger= LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
 
