@@ -1,4 +1,41 @@
 intro to spring framework:
+---------------------------
+Spring is java framework for simplification of sw development
+it have many modules
+
+Spring framework:
+
+spring DI
+spring AOP
+spring jdbc / spring hib/ spring mongo --->  jdbc template
+spring MVC
+spring security
+spring ...bla bla
+
+Why spring boot:
+	you have to configure a lots while interate many module with spring
+	
+Now we have spring boot:
+	spring boot = spring - extra config + embedded tomcat + actuator + cloud native support
+
+
+Agenda Session 3: Spring Dependency Injection 
+===============================================
+
+Need of Dependency Injection
+Spring DI using XML
+Spring DI using annotation
+Spring DI using java configuration
+spring dependency injection important annotation
+spring bean life cycle basics
+spring core interview questions
+Spring DI bankapplication
+
+interview questions:
+https://github.com/altafjava/spring-interview-questions-answers
+https://stackoverflow.com/questions/11316688/inversion-of-control-vs-dependency-injection-with-selected-quotes-is-my-unders
+https://stackoverflow.com/questions/6550700/inversion-of-control-vs-dependency-injection
+
 
 
 
@@ -22,7 +59,7 @@ public interface AccountDao {
 }
 
 
-public class AccountDaoImplUsingJdbc implements AccountDao{
+public class AccountDaoImplUsingHashMap implements AccountDao{
 
     private Map<Integer, Account> accounts=new HashMap<>();
 
@@ -32,7 +69,7 @@ public class AccountDaoImplUsingJdbc implements AccountDao{
     }
     @Override
     public List<Account> getAll() {
-        System.out.println("getAll using using jdbc...");
+        System.out.println("getAll using using HashMap...");
         return new ArrayList<Account>(accounts.values());
     }
 
@@ -46,3 +83,10 @@ public class AccountDaoImplUsingJdbc implements AccountDao{
         accounts.put(account.getId(), account);
     }
 }
+
+
+jdbc.driver=com.mysql.cj.jdbc.Driver
+jdbc.url=jdbc:mysql://localhost:3306/busybank
+jdbc.username=root
+jdbc.password=root
+pool.initialSize=10
