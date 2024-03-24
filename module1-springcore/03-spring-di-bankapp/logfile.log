@@ -12,3 +12,20 @@ INFO  | 2024-03-17 20:14:16 | [main] demo0.Main (Main.java:15) - code is working
 ERROR | 2024-03-17 20:14:16 | [main] demo0.Main (Main.java:22) - ex occured For input string: "123a" 
 INFO  | 2024-03-17 20:17:20 | [main] demo0.Main (Main.java:15) - code is working till line no 10
 ERROR | 2024-03-17 20:17:20 | [main] demo0.Main (Main.java:22) - ex occured For input string: "123a" 
+INFO  | 2024-03-23 21:47:41 | [main] service.AccountServiceImpl (AccountServiceImpl.java:52) - time taken: 0 ms
+INFO  | 2024-03-23 21:48:36 | [main] service.AccountServiceImpl (AccountServiceImpl.java:51) - time taken: 2027 ms
+INFO  | 2024-03-23 21:55:43 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken: 2015 ms
+INFO  | 2024-03-23 22:01:28 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken: 2021 ms
+INFO  | 2024-03-23 22:02:30 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken: 2022 ms
+INFO  | 2024-03-23 22:03:42 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken: 0 ms
+INFO  | 2024-03-23 22:03:44 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken: 2026 ms
+INFO  | 2024-03-23 22:03:44 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken: 0 ms
+INFO  | 2024-03-23 22:05:03 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken: to call getAll is 3 ms
+INFO  | 2024-03-23 22:05:04 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken: to call getAll is 1 ms
+INFO  | 2024-03-23 22:05:05 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken: to call transfer is 2024 ms
+INFO  | 2024-03-23 22:05:05 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken: to call getAll is 0 ms
+INFO  | 2024-03-23 22:05:06 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken: to call transfer is 2033 ms
+INFO  | 2024-03-23 22:05:06 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken: to call getAll is 0 ms
+INFO  | 2024-03-23 22:06:53 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken: to call getAll is 0 ms
+INFO  | 2024-03-23 22:06:55 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken: to call transfer is 2012 ms
+INFO  | 2024-03-23 22:06:55 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken: to call getAll is 0 ms

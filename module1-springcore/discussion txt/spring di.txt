@@ -10,7 +10,7 @@ spring AOP
 spring jdbc / spring hib/ spring mongo --->  jdbc template
 spring MVC
 spring security
-spring ...bla bla
+spring ... so many modules
 
 Why spring boot:
 	you have to configure a lots while interate many module with spring
@@ -22,14 +22,81 @@ Now we have spring boot:
 Agenda Session 3: Spring Dependency Injection 
 ===============================================
 
-Need of Dependency Injection
+doubts about containers
+
+web server vs application server vs db server vs web container 
+spring is also container
+
+Need of Dependency Injection?
+
+loose coupling and high cohesion?
+
+A passanger is traveling using a car
+
+
+
 Spring DI using XML
+	done
 Spring DI using annotation
+
+	they do the same job
+	aka meta data for srping to tell what to do
+	
+	
+@Component
+@Autowire 
+replace lots of xml
+
+spring xml----> annotation
+how to force spring to go for annotations?
+
+@Bean vs @Component
+these are 2 ways to create bean using annotation
+are they same... not
+
+
+NoUniqueBeanDefinitionException: No qualifying bean of type
+ 'com.busycoder.demo4.Vehicle' available: expected single matching bean but found 2: car,bike
+
+
 Spring DI using java configuration
+done
 spring dependency injection important annotation
+done
+
+spring profile:
+it allow you to swap the bean impl at run time without changing the code :)
+devops: dev, test, pre-prod , prod
+
+NoSuchBeanDefinitionException
+
 spring bean life cycle basics
 spring core interview questions
+
 Spring DI bankapplication
+
+3 tier app:
+
+						@Component
+						   |
+	----------------------------------------------------
+	|						|							|
+@controller					@Service				@Repository
+@RestController
+
+						
+web ---------------------- service --------------- dao layer -------------db
+
+
+transfer the fund
+deposit
+withdraw
+
+Dto vs entity
+used to transfer the data
+entity is a object that intact with hib/jpa to fetch data with database
+
+
 
 interview questions:
 https://github.com/altafjava/spring-interview-questions-answers
@@ -83,6 +150,9 @@ public class AccountDaoImplUsingHashMap implements AccountDao{
         accounts.put(account.getId(), account);
     }
 }
+
+singleton vs prototype
+only one	as many object as i calling
 
 
 jdbc.driver=com.mysql.cj.jdbc.Driver

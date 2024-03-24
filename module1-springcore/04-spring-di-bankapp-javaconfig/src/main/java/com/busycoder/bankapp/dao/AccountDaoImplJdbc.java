@@ -26,9 +26,6 @@ public class AccountDaoImplJdbc implements AccountDao{
 
     @Override
     public Account getById(int id) {
-        try{
-            Thread.sleep(1000);
-        }catch (InterruptedException e){}
         return accounts.get(id);
     }
 

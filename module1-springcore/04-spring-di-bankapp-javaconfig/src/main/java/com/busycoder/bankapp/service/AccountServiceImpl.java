@@ -4,8 +4,6 @@ import com.busycoder.bankapp.dao.AccountDao;
 import com.busycoder.bankapp.dao.AccountDaoImplMap;
 import com.busycoder.bankapp.dto.Account;
 import com.busycoder.bankapp.exceptions.BankAccountNotFoundException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,15 +11,14 @@ import java.util.List;
 //SL=BL + CCC
 @Service(value = "accountService")
 public class AccountServiceImpl implements AccountService{
-
+    //field /setter/ctr
     private AccountDao accountDao;
-
-
-    @Autowired
+    //in new version of spring if u have only once ctr
+    //writing autowire on ctr is not mandatory
+   // @Autowired
     public AccountServiceImpl(AccountDao accountDao) {
         this.accountDao = accountDao;
     }
-
     @Override
     public List<Account> getAll() {
         return accountDao.getAll();
@@ -38,6 +35,7 @@ public class AccountServiceImpl implements AccountService{
 
     @Override
     public void transfer(int fromId, int toId, double amount) {
+           //load both the acc in momory
         Account fromAcc=getById(fromId);
         Account toAcc=getById(toId);
         fromAcc.setAmount(fromAcc.getAmount()-amount);
