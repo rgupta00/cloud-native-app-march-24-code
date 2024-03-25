@@ -1,0 +1,14 @@
+INFO  | 2024-03-24 20:50:37 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken to execute getAll is 0 ms
+INFO  | 2024-03-24 20:51:24 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken to execute getAll is 1 ms
+INFO  | 2024-03-24 20:52:42 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken to execute getAll is 0 ms
+INFO  | 2024-03-24 20:52:42 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken to execute transfer is 4 ms
+INFO  | 2024-03-24 20:52:42 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken to execute getAll is 1 ms
+ERROR | 2024-03-24 20:59:06 | [main] aspect.LoggingAspect (LoggingAspect.java:31) - Exception -------------- bank account with id 33 is not found
+INFO  | 2024-03-24 21:20:50 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 768 ms
+INFO  | 2024-03-24 21:23:36 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 706 ms
+INFO  | 2024-03-24 22:02:51 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 847 ms
+INFO  | 2024-03-24 22:03:37 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 884 ms
+INFO  | 2024-03-24 22:03:37 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute transfer is 187 ms
+INFO  | 2024-03-24 22:03:37 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 54 ms
+INFO  | 2024-03-24 22:04:55 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 851 ms
+ERROR | 2024-03-24 22:04:55 | [main] aspect.LoggingAspect (LoggingAspect.java:31) - Exception -------------- some jdbc prob
