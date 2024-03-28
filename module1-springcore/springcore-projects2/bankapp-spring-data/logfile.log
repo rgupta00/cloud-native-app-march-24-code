@@ -1,0 +1,36 @@
+INFO  | 2024-03-24 20:50:37 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken to execute getAll is 0 ms
+INFO  | 2024-03-24 20:51:24 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken to execute getAll is 1 ms
+INFO  | 2024-03-24 20:52:42 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken to execute getAll is 0 ms
+INFO  | 2024-03-24 20:52:42 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken to execute transfer is 4 ms
+INFO  | 2024-03-24 20:52:42 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken to execute getAll is 1 ms
+ERROR | 2024-03-24 20:59:06 | [main] aspect.LoggingAspect (LoggingAspect.java:31) - Exception -------------- bank account with id 33 is not found
+INFO  | 2024-03-24 21:20:50 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 768 ms
+INFO  | 2024-03-24 21:23:36 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 706 ms
+INFO  | 2024-03-24 22:02:51 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 847 ms
+INFO  | 2024-03-24 22:03:37 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 884 ms
+INFO  | 2024-03-24 22:03:37 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute transfer is 187 ms
+INFO  | 2024-03-24 22:03:37 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 54 ms
+INFO  | 2024-03-24 22:04:55 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 851 ms
+ERROR | 2024-03-24 22:04:55 | [main] aspect.LoggingAspect (LoggingAspect.java:31) - Exception -------------- some jdbc prob
+INFO  | 2024-03-25 16:45:09 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 434 ms
+ERROR | 2024-03-25 16:45:09 | [main] aspect.LoggingAspect (LoggingAspect.java:31) - Exception -------------- some jdbc prob
+INFO  | 2024-03-25 16:45:33 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 591 ms
+INFO  | 2024-03-25 16:45:33 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute transfer is 136 ms
+INFO  | 2024-03-25 16:45:33 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 21 ms
+INFO  | 2024-03-25 16:47:40 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 657 ms
+INFO  | 2024-03-25 16:47:40 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute transfer is 137 ms
+INFO  | 2024-03-25 16:47:40 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 23 ms
+INFO  | 2024-03-25 16:49:05 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 621 ms
+INFO  | 2024-03-25 16:49:05 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute transfer is 144 ms
+INFO  | 2024-03-25 16:49:05 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 17 ms
+INFO  | 2024-03-25 16:54:59 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  | 2024-03-25 16:54:59 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+INFO  | 2024-03-25 16:55:00 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-25 16:55:00 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-25 16:55:00 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-25 16:55:00 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-25 16:55:00 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2024-03-25 16:55:01 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-25 16:55:01 | [main] internal.QueryTranslatorFactoryInitiator (QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
