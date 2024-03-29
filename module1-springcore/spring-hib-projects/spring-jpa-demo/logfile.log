@@ -1,0 +1,22 @@
+INFO  | 2024-03-28 11:53:30 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  | 2024-03-28 11:53:30 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+INFO  | 2024-03-28 11:53:30 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-28 11:53:30 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-28 11:53:30 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-28 11:53:30 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-28 11:53:31 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2024-03-28 11:53:32 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-28 11:53:32 | [main] internal.QueryTranslatorFactoryInitiator (QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+INFO  | 2024-03-28 11:54:53 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  | 2024-03-28 11:54:53 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 102 ms. Found 1 JPA repository interfaces.
+INFO  | 2024-03-28 11:54:53 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-28 11:54:53 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-28 11:54:53 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-28 11:54:53 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-28 11:54:54 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2024-03-28 11:54:55 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-28 11:54:56 | [main] internal.QueryTranslatorFactoryInitiator (QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
