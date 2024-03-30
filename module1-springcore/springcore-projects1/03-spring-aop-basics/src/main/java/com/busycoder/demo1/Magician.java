@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 public class Magician {
 
     public String doMagic(){
-        if(1==1)
-            throw  new FeverEx("call the dr now");
+//        if(1==1)
+//            throw  new FeverEx("call the dr now");
         System.out.println("abara ka dabra");
         return "rabbit out of the hat";
     }

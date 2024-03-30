@@ -1,0 +1,242 @@
+INFO  | 2024-03-24 20:50:37 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken to execute getAll is 0 ms
+INFO  | 2024-03-24 20:51:24 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken to execute getAll is 1 ms
+INFO  | 2024-03-24 20:52:42 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken to execute getAll is 0 ms
+INFO  | 2024-03-24 20:52:42 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken to execute transfer is 4 ms
+INFO  | 2024-03-24 20:52:42 | [main] aspect.LoggingAspect (LoggingAspect.java:23) - time taken to execute getAll is 1 ms
+ERROR | 2024-03-24 20:59:06 | [main] aspect.LoggingAspect (LoggingAspect.java:31) - Exception -------------- bank account with id 33 is not found
+INFO  | 2024-03-24 21:20:50 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 768 ms
+INFO  | 2024-03-24 21:23:36 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 706 ms
+INFO  | 2024-03-24 22:02:51 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 847 ms
+INFO  | 2024-03-24 22:03:37 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 884 ms
+INFO  | 2024-03-24 22:03:37 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute transfer is 187 ms
+INFO  | 2024-03-24 22:03:37 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 54 ms
+INFO  | 2024-03-24 22:04:55 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 851 ms
+ERROR | 2024-03-24 22:04:55 | [main] aspect.LoggingAspect (LoggingAspect.java:31) - Exception -------------- some jdbc prob
+INFO  | 2024-03-30 17:40:40 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 541 ms
+ERROR | 2024-03-30 17:40:40 | [main] aspect.LoggingAspect (LoggingAspect.java:31) - Exception -------------- some jdbc prob
+INFO  | 2024-03-30 17:41:23 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 1762 ms
+INFO  | 2024-03-30 17:41:39 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute transfer is 503 ms
+INFO  | 2024-03-30 17:42:54 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 466 ms
+INFO  | 2024-03-30 17:42:54 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute transfer is 97 ms
+INFO  | 2024-03-30 17:42:54 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 13 ms
+INFO  | 2024-03-30 17:44:10 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 1719 ms
+INFO  | 2024-03-30 17:44:16 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute transfer is 477 ms
+INFO  | 2024-03-30 17:44:16 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 119 ms
+INFO  | 2024-03-30 20:14:15 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 985 ms
+INFO  | 2024-03-30 20:14:16 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute transfer is 200 ms
+INFO  | 2024-03-30 20:14:16 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 36 ms
+INFO  | 2024-03-30 20:15:35 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 972 ms
+ERROR | 2024-03-30 20:15:35 | [main] aspect.LoggingAspect (LoggingAspect.java:31) - Exception -------------- some jdbc prob
+INFO  | 2024-03-30 20:18:05 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 93 ms
+ERROR | 2024-03-30 20:18:05 | [main] aspect.LoggingAspect (LoggingAspect.java:31) - Exception -------------- some jdbc prob
+INFO  | 2024-03-30 20:32:22 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 66 ms
+ERROR | 2024-03-30 20:32:23 | [main] aspect.LoggingAspect (LoggingAspect.java:31) - Exception -------------- null
+INFO  | 2024-03-30 20:33:40 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 102 ms
+ERROR | 2024-03-30 20:33:40 | [main] aspect.LoggingAspect (LoggingAspect.java:31) - Exception -------------- null
+INFO  | 2024-03-30 20:34:31 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 84 ms
+ERROR | 2024-03-30 20:34:31 | [main] aspect.LoggingAspect (LoggingAspect.java:31) - Exception -------------- null
+INFO  | 2024-03-30 20:35:31 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 58 ms
+ERROR | 2024-03-30 20:35:32 | [main] aspect.LoggingAspect (LoggingAspect.java:31) - Exception -------------- null
+INFO  | 2024-03-30 20:38:13 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 89 ms
+ERROR | 2024-03-30 20:38:13 | [main] aspect.LoggingAspect (LoggingAspect.java:31) - Exception -------------- null
+INFO  | 2024-03-30 21:05:14 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:05:14 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:05:14 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:05:15 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:05:16 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+ERROR | 2024-03-30 21:05:16 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:426) - Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: com.busycoder.bankapp.entities.Account
+WARN  | 2024-03-30 21:05:16 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:591) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'localContainerEntityManagerFactoryBean' defined in com.busycoder.bankapp.config.AppConfig: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.busycoder.bankapp.entities.Account
+INFO  | 2024-03-30 21:05:43 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:05:44 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:05:44 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:05:44 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:05:45 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2024-03-30 21:05:46 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  | 2024-03-30 21:05:46 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:591) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountDaoImpl' defined in file [C:\cloud-native-app-march-24-code\module1-springcore\springcore-projects3-jpa\bankapp-jdbc\target\classes\com\busycoder\bankapp\dao\AccountDaoImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.persistence.EntityManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+INFO  | 2024-03-30 21:05:46 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-30 21:07:46 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:07:46 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:07:46 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:07:46 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:07:47 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2024-03-30 21:07:48 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  | 2024-03-30 21:07:48 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:591) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountDaoImpl' defined in file [C:\cloud-native-app-march-24-code\module1-springcore\springcore-projects3-jpa\bankapp-jdbc\target\classes\com\busycoder\bankapp\dao\AccountDaoImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.persistence.EntityManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+INFO  | 2024-03-30 21:07:48 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-30 21:09:44 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:09:44 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:09:44 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:09:44 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:09:45 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2024-03-30 21:09:46 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-30 21:09:47 | [main] internal.QueryTranslatorFactoryInitiator (QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+INFO  | 2024-03-30 21:09:47 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 240 ms
+INFO  | 2024-03-30 21:10:37 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:10:37 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:10:37 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:10:37 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:10:38 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2024-03-30 21:10:39 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-30 21:10:39 | [main] internal.QueryTranslatorFactoryInitiator (QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+INFO  | 2024-03-30 21:10:40 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 279 ms
+INFO  | 2024-03-30 21:14:50 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:14:50 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:14:50 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:14:50 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:14:51 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2024-03-30 21:14:52 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-30 21:14:53 | [main] internal.QueryTranslatorFactoryInitiator (QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+INFO  | 2024-03-30 21:14:53 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 294 ms
+INFO  | 2024-03-30 21:14:53 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute transfer is 163 ms
+INFO  | 2024-03-30 21:14:53 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 33 ms
+INFO  | 2024-03-30 21:15:45 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:15:45 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:15:45 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:15:45 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:15:46 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2024-03-30 21:15:47 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-30 21:15:48 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute transfer is 234 ms
+INFO  | 2024-03-30 21:16:23 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:16:23 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:16:23 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:16:23 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:16:24 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2024-03-30 21:16:25 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-30 21:16:26 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute transfer is 264 ms
+INFO  | 2024-03-30 21:17:11 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:17:12 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:17:12 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:17:12 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:17:13 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2024-03-30 21:17:14 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-30 21:17:15 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute transfer is 275 ms
+INFO  | 2024-03-30 21:18:28 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:18:28 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:18:28 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:18:28 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:18:29 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2024-03-30 21:18:30 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-30 21:18:31 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute transfer is 231 ms
+INFO  | 2024-03-30 21:22:48 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:22:48 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:22:48 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:22:49 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:22:50 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2024-03-30 21:22:50 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-30 21:22:51 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute addAccount is 54 ms
+INFO  | 2024-03-30 21:22:51 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute addAccount is 0 ms
+INFO  | 2024-03-30 21:24:00 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:24:01 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:24:01 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:24:01 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:24:02 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2024-03-30 21:24:03 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-30 21:24:44 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:24:44 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:24:44 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:24:45 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:24:46 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2024-03-30 21:24:47 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-30 21:24:47 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute addAccount is 182 ms
+INFO  | 2024-03-30 21:24:47 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute addAccount is 0 ms
+INFO  | 2024-03-30 21:27:46 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:27:46 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:27:46 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:27:46 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:27:47 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+INFO  | 2024-03-30 21:27:48 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-30 21:27:49 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute addAccount is 79 ms
+INFO  | 2024-03-30 21:27:49 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute addAccount is 1 ms
+INFO  | 2024-03-30 21:29:58 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:29:58 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:29:58 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:29:58 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:29:59 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+INFO  | 2024-03-30 21:30:00 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-30 21:30:00 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute addAccount is 63 ms
+INFO  | 2024-03-30 21:30:01 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute addAccount is 1 ms
+INFO  | 2024-03-30 21:30:23 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:30:23 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:30:23 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:30:23 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:30:24 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+INFO  | 2024-03-30 21:30:25 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-30 21:30:26 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute addAccount is 49 ms
+INFO  | 2024-03-30 21:30:26 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute addAccount is 1 ms
+INFO  | 2024-03-30 21:33:10 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:33:10 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:33:10 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:33:10 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:33:11 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+INFO  | 2024-03-30 21:33:12 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-30 21:33:13 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute addAccount is 63 ms
+INFO  | 2024-03-30 21:33:13 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute addAccount is 1 ms
+INFO  | 2024-03-30 21:33:55 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:33:55 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:33:55 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:33:55 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:33:56 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+INFO  | 2024-03-30 21:33:57 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-30 21:33:58 | [main] internal.QueryTranslatorFactoryInitiator (QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+INFO  | 2024-03-30 21:33:58 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 258 ms
+INFO  | 2024-03-30 21:40:22 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  | 2024-03-30 21:40:22 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 103 ms. Found 1 JPA repository interfaces.
+INFO  | 2024-03-30 21:40:23 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:40:23 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:40:23 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:40:23 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:40:24 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+INFO  | 2024-03-30 21:40:25 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-30 21:40:28 | [main] internal.QueryTranslatorFactoryInitiator (QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+INFO  | 2024-03-30 21:40:28 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 994 ms
+INFO  | 2024-03-30 21:40:48 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  | 2024-03-30 21:40:48 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 98 ms. Found 1 JPA repository interfaces.
+INFO  | 2024-03-30 21:40:48 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO  | 2024-03-30 21:40:48 | [main] hibernate.Version (Version.java:46) - HHH000412: Hibernate Core {5.3.27.Final}
+INFO  | 2024-03-30 21:40:48 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2024-03-30 21:40:49 | [main] java.JavaReflectionManager (JavaReflectionManager.java:49) - HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+INFO  | 2024-03-30 21:40:50 | [main] dialect.Dialect (Dialect.java:161) - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+INFO  | 2024-03-30 21:40:50 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-03-30 21:40:53 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute addAccount is 210 ms
+INFO  | 2024-03-30 21:40:53 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute addAccount is 3 ms
+INFO  | 2024-03-30 21:40:53 | [main] internal.QueryTranslatorFactoryInitiator (QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+INFO  | 2024-03-30 21:40:53 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAll is 549 ms
