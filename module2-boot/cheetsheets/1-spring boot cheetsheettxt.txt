@@ -1,0 +1,1137 @@
+
+Spring boot:
+Agenda:
+---------------------
+=> Why spring boot
+=> Spring boot getting started
+=> Quick recap dependency injection
+=> Quick recap aop
+=> Spring boot REST CRUD application
+=> Spring data JPA
+
+
+Why spring boot:
+------------------
+Auto-Configuration 
+Dependency Management
+Externalized Configuration
+Production support
+Runnable Jars
+Microservice
+Support cloud native app
+
+
+
+
+
+Spring boot getting started
+----------------------------
+spring hello world rest endpoint
+
+
+MVC
+controller ---------------service ----------------- dao --------------db
+
+
+spring.banner.location=classpath:banner.txt
+https://devops.datenkollektiv.de/banner.txt/index.html
+
+java -jar  demo.jar --server.port=8050
+
+
+Quick recap dependency injection
+----------------------------------
+
+Hello world rest api application
+----------------------------------
+@RestController //i want to create a rest api
+public class HelloController {
+    //Requestparam vs pathvariable
+    @GetMapping(path="hello/{name}/{city}")
+    public String hello(@PathVariable(name = "name") String uname,
+                        @PathVariable(name = "city") String city){
+        return "hello champs! "+ uname+": " + city;
+    }
+    //bye?name=raja&city=delhi @Requestparam
+    @GetMapping(path = "bye")
+    public  String hello2(@RequestParam(name = "name")String name,@RequestParam(name = "city")String city ){
+        return "using Requestparam "+ name+" "+ city;
+    }
+
+}
+
+
+
+Spring boot REST CRUD application
+-------------------------------
+
+Rest 
+Controller <------------ Service layer <---------- persistance layer <------ SessionFactory
+
+
+
+step 1: create project structure
+-----------------------------
+
+step 2: create dao layer
+--------------------------
+public class Product {
+	private Integer id;
+	private String name;
+	private BigDecimal price;
+}
+
+public interface ProductDao {
+    public List<Product> getAll();
+    public Product getById(int id);
+    public Product addProduct(Product product);
+    public Product updateProduct(int id, Product product);
+    public Product deleteProduct(int id);
+}
+@Repository
+public class ProductDaoImplMap implements ProductDao{
+
+    private Map<Integer,Product> map=new HashMap<>();
+
+    private int counter;
+    public ProductDaoImplMap(){
+        map.put(1, new Product(1,"laptop", BigDecimal.valueOf(500000)));
+        map.put(2, new Product(2,"laptop cover", BigDecimal.valueOf(1000)));
+        counter=2;
+
+    }
+    @Override
+    public List<Product> getAll() {
+        return new ArrayList<>(map.values());
+    }
+
+    @Override
+    public Product getById(int id) {
+        return map.get(id);
+    }
+}
+
+
+step 3: create service layer
+--------------------------
+public interface ProductService {
+	public List<Product> findAll();
+	public Product getById(int id);
+	public Product addProduct(Product product);
+	public Product updateProduct(int id, Product product);
+	public Product deleteProduct(int id);
+	
+}
+
+@Service //SL=BL+CCC
+public class ProductServiceImpl implements ProductService{
+
+    private ProductDao productDao;
+
+    @Autowired
+    public ProductServiceImpl(ProductDao productDao) {
+        this.productDao = productDao;
+    }
+
+    @Override
+    public List<Product> findAll() {
+        List<Product> products= productDao.getAll();
+        return products;
+    }
+
+    @Override
+    public Product getById(int id) {
+        Product product=productDao.getById(id);
+        if(product==null)
+            throw new ProductNotFoundException("product with id "+ id +" is not found");
+        return product;
+    }
+
+    @Override
+    public Product addProduct(Product product) {
+        Product productAdded=productDao.addProduct(product);
+        return productAdded;
+    }
+
+    @Override
+    public Product updateProduct(int id, Product product) {
+        return productDao.updateProduct(id, product);
+    }
+
+    @Override
+    public Product deleteProduct(int id) {
+        return productDao.deleteProduct(id);
+    }
+}
+
+Step 4: create ex class
+--------------------------
+public class ProductNotFoundException extends RuntimeException{
+	public ProductNotFoundException(String message) {
+		super(message);
+	}
+}
+
+
+
+step 5: create controller
+------------------------------
+
+@RestController//@Controller+ @ResponseBody(it trigger parser to convert java to json object)
+public class ProductController {
+
+    private ProductService productService;
+
+    @Autowired
+    public ProductController(ProductService productService) {
+        this.productService = productService;
+    }
+    //----get all products
+    @GetMapping(path = "products")
+    public List<Product> getAll(){
+        return productService.findAll();
+    }
+
+    //get by id
+    @GetMapping(path = "products/{id}")
+    public Product getById(@PathVariable int id){
+        return productService.getById(id);
+    }
+    //add product
+    @PostMapping(path = "products")
+    public Product addProduct(@RequestBody Product product){
+        return productService.addProduct(product);
+    }
+    //update
+
+    //delete
+
+}
+
+step 6: how to send correct status code to the client?
+-------------------------------------------------------
+ResponseEntity= data + status code(it is very imp)
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+
+@RestController//@Controller+ @ResponseBody(it trigger parser to convert java to json object)
+public class ProductController {
+
+    private ProductService productService;
+
+    @Autowired
+    public ProductController(ProductService productService) {
+        this.productService = productService;
+    }
+    //----get all products
+    //ResponseEnitty= data + http status code
+    @GetMapping(path = "products")
+    public ResponseEntity<List<Product>> getAll(){
+        List<Product> products= productService.findAll();
+        return ResponseEntity.status(HttpStatus.OK).body(products);
+    }
+
+    //get by id
+    @GetMapping(path = "products/{id}")
+    public ResponseEntity<Product> getById(@PathVariable int id){
+        return ResponseEntity.ok(productService.getById(id));
+    }
+    //add product
+    @PostMapping(path = "products")
+    public ResponseEntity<Product> addProduct(@RequestBody Product product){
+        Product productAdded= productService.addProduct(product);
+        return ResponseEntity.status(HttpStatus.CREATED).body(productAdded);
+    }
+    //update
+
+    //delete
+
+}
+
+step 7: handle the excpetions
+------------------------------
+
+step 7.1: use ResponseStatus ann to force correct status code in case of some ex
+
+@ResponseStatus(HttpStatus.NOT_FOUND)
+public class ProductNotFoundException extends RuntimeException{
+	public ProductNotFoundException(String message) {
+		super(message);
+	}
+}
+
+step 7.2: i want to send graceful error message:
+
+Ex handling : ccc, AOP : throws advice
+
+{
+    "timestamp": "2024-04-06T15:22:57.713+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "toContact": "rgupta.mech@gmail.com"
+}
+
+
+
+@RestControllerAdvice //aop @ControllerAdvice+ @ResponseBody
+public class ExcetionHandlerController {
+
+    @ExceptionHandler(ProductNotFoundException.class)
+    public ResponseEntity<ErrorInfo> handle404(ProductNotFoundException ex){
+        ErrorInfo errorInfo=ErrorInfo.builder()
+                .errorMessage(ex.getMessage())
+                .status(HttpStatus.NOT_FOUND.toString())
+                .toContact("rgupta.mtech@gmail.com")
+                .timestamp(LocalDateTime.now())
+                .build();
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorInfo);
+    }
+    //catch all
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<ErrorInfo> handle500(Exception ex){
+        //log4j to log the actual cause of ex in a log file
+
+        ErrorInfo errorInfo=ErrorInfo.builder()
+                .errorMessage("pls try after some time")
+                .status(HttpStatus.INTERNAL_SERVER_ERROR.toString())
+                .toContact("rgupta.mtech@gmail.com")
+                .timestamp(LocalDateTime.now())
+                .build();
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(errorInfo);
+    }
+}
+
+
+step 8: do data validation if data is not valiid force user to correct it (400)
+------------------------------
+Spring : spring validation api Java EE jsr 303
+annotation based api to do data validation
+
+step 1: add validation jar to maven pom
+
+step 2: put the validation annotation on pojo
+public class Product {
+	private Integer id;
+
+	@NotEmpty(message = "name should not be empty")
+	@Pattern( regexp = "[A-Za-z]+( [A-Za-z]+)*")
+	private String name;
+
+	@NotNull(message = "price should not be null")
+	@Range(min = 100, max = 100000, message = "price should be in range of 10 to 100000")
+	private BigDecimal price;
+}
+
+step 3: apply @Valid to the post method / put method
+    @PostMapping(path = "products")
+    public ResponseEntity<Product> addProduct(@Valid @RequestBody Product product){
+        Product productAdded= productService.addProduct(product);
+        return ResponseEntity.status(HttpStatus.CREATED).body(productAdded);
+    }
+	
+	it will force spring to throw MethodArgumentNotValidException if some rule is not followed on pojo
+	
+step 4: now simply write a handler
+ @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<ErrorInfo> handle400(MethodArgumentNotValidException ex){
+        //log4j to log the actual cause of ex in a log file
+
+        ErrorInfo errorInfo=ErrorInfo.builder()
+                .errorMessage("some data validation error")
+                .status(HttpStatus.BAD_REQUEST.toString())
+                .toContact("rgupta.mtech@gmail.com")
+                .timestamp(LocalDateTime.now())
+                .build();
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errorInfo);
+    }
+
+
+step 6 :new problem, which validation have failed and why ...i want this inforation
+
+  @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<ErrorInfo> handle400(MethodArgumentNotValidException ex){
+        //log4j to log the actual cause of ex in a log file
+
+        String errorMessage = ex.getBindingResult().getAllErrors()
+                .stream()
+                .map(x -> x.getDefaultMessage())
+                .collect(Collectors.joining(" ,"));
+
+        ErrorInfo errorInfo=ErrorInfo.builder()
+                .errorMessage(errorMessage)
+                .status(HttpStatus.BAD_REQUEST.toString())
+                .toContact("rgupta.mtech@gmail.com")
+                .timestamp(LocalDateTime.now())
+                .build();
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errorInfo);
+    }
+
+Step 7: hard coding error message is bad
+
+ValidationMessages.properties
+-----------------------------
+
+product.name.absent=Please provide product name
+product.name.invalid=product Name should contain only alphabets and space
+
+product.price.absent=Please provide product price 
+account.price.invalid=Please provide correct price bw 100 to 100000
+
+apply the keys from prop file to the pojo
+---------------------------------------------
+public class Product {
+	private Integer id;
+
+	@NotEmpty(message = "{product.name.absent}")
+	@Pattern( regexp = "[A-Za-z]+( [A-Za-z]+)*", message = "{product.name.invalid}")
+	private String name;
+
+	@NotNull(message = "{product.price.absent}")
+	@Range(min = 10, max = 100000, message = "{product.price.invalid}")
+	private BigDecimal price;
+
+	//private String productType;//EL, BOOKS ST custom annotation
+}
+
+
+
+
+
+
+
+
+
+
+
+
+Spring data JPA
+-----------------
+
+
+spring boot rest crud application 
+___________________________________________
+
+
+
+
+step 1: application.properties
+_______________________
+server.servlet.context-path=/productapp
+server.port=8082
+
+spring.datasource.url=jdbc:mysql://localhost:3306/demoms?useSSL=false
+spring.datasource.username=root
+spring.datasource.password=root
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+spring.jpa.hibernate.ddl-auto=update
+logging.level.org.springframework.web: DEBUG
+logging.level.org.hibernate: ERROR
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+
+
+UserInterface.PRODUCT_ADD_SUCCESS=product added successfully
+UserInterface.PRODUCT_UPDATE_SUCCESS=product added successfully
+UserInterface.PRODUCT_DELETE_SUCCESS=product added successfully
+
+Service.PRODUCT_NOT_EXISTS=Product not exist
+
+
+
+
+
+JSR 303 validateion api , exception handling
+
+1. add validation api
+2. apply @valid in post and update method 
+
+3. 
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ProductDto {
+	private int id;
+	
+	@NotNull(message = "{product.name.absent}")
+	@Pattern(regexp = "[A-Za-z]+( [A-Za-z]+)*", message = "{product.name.invalid}")
+	private String name;
+
+	@NotNull(message = "{product.price.absent}")
+	@Range(min = 100, max = 100000, message = "{product.price.invalid}")
+	private BigDecimal price;
+
+}
+
+
+4. create exception handler
+
+
+
+ValidationMessages.properties
+-----------------------------
+
+product.name.absent=Please provide product name
+product.name.invalid=product Name should contain only alphabets and space
+
+product.price.absent=Please provide product price 
+account.price.invalid=Please provide correct price bw 100 to 100000
+
+
+	Other validation example:
+	-------------------------
+
+	@Email(message = "{account.email.invalid}")
+	@NotNull(message = "{account.email.absent}")
+	private String email;
+	
+	@NotNull(message = "{account.phone.absent}")
+	@Pattern(regexp = "[789][0-9]{9}", message = "{account.phone.invalid}")
+	private String phone;
+
+
+
+Spring boot session 3:
+-------------------------
+* changing banner
+* xml support
+* spring boot profiles, how to read prop files
+* spring boot logging, spring boot logging log4j2
+* Using OpenAPI 3.0 , swagger documentation
+
+Session 4: spring boot
+----------------------
+* dynamic filtering and version
+* spring data
+* h2 database
+* Caching is a ccc 
+* schedule processes
+* spring boot actuator
+* spring boot jsp
+* mongodb integration
+
+Session 5: spring boot joins, Bank application
+----------------------
+* one to one 
+* h2 database
+* Caching is a ccc 
+* schedule processes
+* spring boot actuator
+* spring boot jsp
+* mongodb integration
+
+Session 6: 
+rabbitMQ
+Kafka
+
+Session 7: spring security
+
+session 8: 
+
+
+
+
+java -jar .\productapp.jar -Dspring.profiles.active=dev --server.port=8090
+
+
+
+
+spring.banner.location=classpath:banner.txt
+https://devops.datenkollektiv.de/banner.txt/index.html
+
+java -jar  demo.jar --server.port=8050
+java -jar -Dspring.profiles.active=dev productapp.jar --server.port=8090
+
+Supporting both xml and json:
+_______________________________
+
+	Step 1: put parser for xml
+
+	     <dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
+	     </dependency>
+
+	Step 2:
+	@GetMapping(path = "products", produces = {MediaType.APPLICATION_JSON_VALUE, 
+			MediaType.APPLICATION_XML_VALUE})
+
+
+
+spring boot reading property files:
+---------------------------------
+
+1. @Value annotation
+2. Enviornment
+3. @ConfigrationProperties
+
+
+@EnableConfigurationProperties(Config.class)
+
+@ConfigrationProperties(prefix="db")
+
+
+server.port=8090
+server.servlet.context-path=/productapp
+spring.h2.console.enabled=true
+
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=foo
+spring.datasource.password=foo
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+# Custom H2 Console URL
+spring.h2.console.path=/h2
+
+spring.jpa.hibernate.ddl-auto=update
+
+
+spring boot logging:
+-------------------
+ 	     
+Disable logging :
+---------------
+logging.level.root=OFF
+logging.level.org.springframework.boot=OFF
+spring.main.banner-mode=OFF   
+
+	     
+     
+Customizing logging :
+---------------	     
+logging.level.org.springframework.web: DEBUG
+logging.level.org.hibernate: ERROR
+
+logging.level.com.productapp=info
+
+
+logging.level.org.springframework.web: DEBUG
+logging.level.org.hibernate: ERROR
+
+
+# Logging pattern for the console
+logging.pattern.console= "%d{yyyy-MM-dd } [%thread] %-5level %logger{36} - %msg%n"
+#logging pattern for file
+logging.pattern.file= "%d{yyyy-MM-dd } [%thread] %-5level %logger{36} - %msg%n"
+
+logging.file.name=/home/raj/Desktop/logs/server.log
+	     
+	     
+ 
+	     
+	     
+
+   
+
+
+
+
+
+Spring boot loging customization:
+_____________________________________
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+    <exclusions>
+        <exclusion>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-log4j2</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-spring-boot</artifactId>
+</dependency>
+
+
+
+
+
+richardson maturity model
+_________________________
+
+Step 8: hateoas: Hypermedia as the Engine of Application State (HATEOAS)
+__________________
+
+ 1: put hateoas dependencies
+
+ 2: enable static improt:
+
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
+
+ 3: change POJO class:
+
+public class Product extends RepresentationModel<Product> {
+} 
+
+
+
+@GetMapping(path = "productsV2/{id}")
+	public EntityModel<Product>  findByIdLink(@PathVariable(name = "id") int id){
+		Link link=linkTo(methodOn(ProductController.class).findByIdLink(id)).withSelfRel();
+		Product product=productService.getById(id);
+		product.add(link);
+		return EntityModel.of(product);
+}
+
+@GetMapping(path = "productsV2")
+	public CollectionModel<Product> findAllV2(){
+		List<Product> products=productService.findAll();
+		for(Product product: products) {
+			Link link=linkTo(methodOn(ProductController.class).findByIdLink(product.getId())).withSelfRel();
+			product.add(link);
+		}
+		return CollectionModel.of(products);
+}
+
+
+
+9. Using OpenAPI 3.0
+_____________________
+https://www.baeldung.com/spring-rest-openapi-documentation
+
+=> Documenting a Spring REST API Using OpenAPI 3.0
+=>Swagger is almost equivalent to SOAP formate, used for documentation of REST api
+
+		Step 1:
+
+	<dependency>
+		<groupId>org.springdoc</groupId>
+		<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+		<version>2.2.0</version>
+	</dependency>
+
+	Step 2:
+
+	http://localhost:8090/bookapp/v3/api-docs
+	
+	http://localhost:8090/bookapp/swagger-ui/index.html
+
+	http://localhost:8090/bookapp/v3/api-docs.yaml
+
+	Step 3:
+	Customization location
+	springdoc.swagger-ui.path=/swagger-ui-bookapp.html
+
+	@OpenAPIDefinition(info = @Info(title = "bookapp API", version = "2.0" , description = "YMSLI bookapp API"))
+	public class BookappApplication implements CommandLineRunner {
+	}
+
+
+	
+10. caching
+_____________
+
+
+step 1: configuration of cache
+
+@Configuration
+@EnableCaching
+public class CachingConfig {
+	@Bean
+	public CacheManager cacheManager(){
+		ConcurrentMapCacheManager cacheManager=new ConcurrentMapCacheManager("products");
+		return cacheManager;
+		
+	}
+}
+
+
+Step 2: applying cache annotations on service layer
+
+@Slf4j
+@Service
+@Transactional
+public class ProductServiceImpl implements ProductService {
+
+	
+	@Cacheable(value="products")
+	@Override
+	public List<Product> findAll() {
+		//
+	}
+
+	@Cacheable(value="products", key = "#id")
+	@Override
+	public Product getById(int id) {
+		//
+	}
+
+	@CachePut(value="products", key="#result.id")
+	@Override
+	public Product addProduct(Product product) {
+		//
+	}
+
+	@CachePut(value="products", key="#result.id")
+	@Override
+	public Product updateProduct(int id, Product product) {
+		//
+	}
+
+	@CacheEvict(value="products", key="#id")
+	@Override
+	public Product deleteProduct(int id) {
+		//
+	}
+
+	@CacheEvict(value="products", allEntries=true)
+	@Override
+	public void evictCache() {
+		log.info("cache is cleared...");
+	}
+
+}
+
+
+
+
+Step 11: schedule processes
+____________________________
+
+	Note:
+	The simple rules that we need to follow to annotate a method with @Scheduled are:
+
+			a method should have the void return type
+			a method should not accept any parameters
+
+	step 1: put @EnableScheduling on bootstrap class
+
+	step 2: create an component with @Scheduled annotation
+
+				
+		@Service
+		public class ScheduledJob {
+			private Logger logger = LoggerFactory.getLogger(ScheduledJob.class);
+		
+			@Autowired
+			private ProductService service;
+		
+			@Scheduled(cron = "0,30 * * * * *")
+			public void cronJob() {
+				logger.info("> cronJob");
+		
+				List<Product> products = service.findAll();
+				logger.info("There are {} products in the data store.", products.size());
+		
+				logger.info("< cronJob");
+			}
+		
+			// after application startup delay of 5 sec, schedule to run each after 15
+			
+			@Scheduled(initialDelay = 5000, fixedRate = 15000)
+			public void fixedRateJob() {
+				logger.info("> fixedRateJob");
+		
+				// Add scheduled logic here
+		
+				List<Product> products = service.findAll();
+				
+				logger.info("There are {} books in the data store.", products.size());
+		
+				logger.info("< fixedRateJob");
+			}
+		
+		}
+
+
+ref:
+https://www.baeldung.com/spring-scheduled-tasks
+https://www.tutorialspoint.com/unix_commands/crontab.htm
+
+Spring boot Actuator:
+-------------------------
+
+server.port=8080
+spring.devtools.restart.enabled=true
+#management.endpoints.web.exposure.exclude=*
+management.endpoints.web.exposure.include=health, custom-endpoint
+management.endpoint.health.show-details=always
+management.health.disk.enabled=true
+management.health.livenessstate.enabled=true
+management.health.readinessstate.enabled=true
+management.server.port=9090
+
+
+#/actuator/info endpoint will show the information given here, keys
+# that are started with info
+info.app.encoding=UTF-8
+info.app.java.source=11
+info.app.java.target=11
+info.app.name=spring booot actuator
+
+
+Custom end points
+
+@Configuration
+@Endpoint(id = "custom-endpoint")
+public class CustomEndpoints {
+    @ReadOperation
+    public String getCustomData(){
+        return "This is custom Data";
+    }
+}
+
+
+
+
+
+Step 12: web application with boot
+____________________________
+
+1. We need to put dependency:
+
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+
+
+2. We need to configure view resolver
+
+spring.mvc.view.prefix:/WEB-INF/views/
+spring.mvc.view.suffix:.jsp
+
+
+3. define controller 
+
+@Controller
+public class ProductController {
+	
+	private ProductService productService;
+
+	@Autowired
+	public ProductController(ProductService productService) {
+		this.productService = productService;
+	}
+	
+	@GetMapping("products")
+	public ModelAndView allProducts(ModelAndView mv) {
+		mv.setViewName("products");
+		mv.addObject("products", productService.findAll());
+		
+		return mv;
+	}
+}
+
+put jsp in /bootapp/src/main/webapp/WEB-INF/views
+
+
+4. define jsp view 
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	 <table>
+	<thead>
+		<tr>
+			<th>product id</th>
+			<th>product name</th>
+			<th>product price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<c:forEach items="${products}" var="product">
+			<tr>
+				<td>${product.id }</td>
+				<td>${product.name }</td>
+				<td>${product.price }</td>
+			</tr>
+		</c:forEach>
+	</tbody>
+</table>
+
+</body>
+</html>
+
+
+
+
+
+Step 11: deployment spring boot as war file to tomcat
+___________________________________________________
+
+
+
+Step 12: Spring boot mongodb integration:
+______________________________________________
+https://roytuts.com/installing-zip-version-of-mongodb-in-windows/
+
+RDBMS 	MongoDB
+______________
+
+Table 	<--->	Collection
+Column 	<--->	Key
+Value 	<--->	Value
+Records/Rows<--->Document/Object
+
+
+Creating collections, document, storing data etc:
+__________________________________________
+
+show dbs 		// List all databases
+use rajdb 		//Switches to inventory
+show collections  	//List all tables in the current selected database
+
+Creating collections, document, storing data etc
+__________________________________________
+
+	use rajdb;	// create as well switch to rajdb
+
+
+
+choose dependencies: web, devtools, mongo
+step 1: Dao layer
+____________________
+
+@Document(collection = "products")
+public class Product {
+    @Id
+    private String id;
+    private String name;
+    private BigDecimal price;
+    private String category;
+    
+}
+
+
+@Repository
+public interface ProductRepo extends MongoRepository<Product, Integer> {
+    public List<Product> findByName(String name);
+}
+
+
+step 5: application.properties
+___________________
+server.servlet.context-path=/empapp
+server.port=8080
+spring.data.mongodb.host=localhost
+spring.data.mongodb.port=27017
+spring.data.mongodb.database=mongodb
+spring.data.mongodb.repositories.enabled=true
+
+
+
+
+
+-----------imp property file configurations------------------
+
+server.port=8090
+server.servlet.context-path=/bankapp
+spring.datasource.driver-class-name= com.mysql.jdbc.Driver
+spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.MySQL5InnoDBDialect
+spring.jpa.hibernate.ddl-auto= update
+spring.datasource.url=jdbc:mysql://localhost:3306/edu123?useSSL=false
+spring.datasource.username=root
+spring.datasource.password=root
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+
+spring.jpa.hibernate.ddl-auto=update
+
+# if u want to disable logging
+#logging.level.root=OFF
+#logging.level.org.springframework.boot=OFF
+#spring.main.banner-mode=OFF
+
+
+logging.level.org.springframework.web: DEBUG
+logging.level.org.hibernate: ERROR
+logging.level.com.productapp: INFO
+logging.level.com.productapp.service: INFO
+
+logging.pattern.console= "%d{yyyy-MM-dd } [%thread] %-5level %logger{36} - %msg%n"
+#logging pattern for file
+logging.pattern.file= "%d{yyyy-MM-dd } [%thread] %-5level %logger{36} - %msg%n"
+#i wnat to send logs to a specific file?
+
+spring.jpa.show-sql=true 
+spring.banner.location=	
+
+spring.jmx.enabled=true
+management.endpoints.web.exposure.include=*
+management.endpoints.jmx.exposure.include=*
+
+management.info.env.enabled=true
+info.app.encoding=UTF-8
+info.app.java.source=21
+info.app.java.target=21
+info.app.name=productapp
+info.app.dev=amit ku
+
+management.endpoint.health.show-details=always
+management.endpoint.health.probes.enabled=true
+# livenessstate readinessstate
+#management.health.livenessstate.enabled=true
+#management.health.readinessstate.enabled=true
+
+UserInterface.INTERNAL_SERVER_ERROR=some internal server error
+#UserInterface.PRODUCT_ADD_SUCCESS=product added successfully
+#UserInterface.PRODUCT_UPDATE_SUCCESS=product added successfully
+#UserInterface.PRODUCT_DELETE_SUCCESS=product added successfully
+#
+#Service.PRODUCT_NOT_EXISTS=Product not exist
+#
+#
+#product.name.absent=Please provide product name
+#product.name.invalid=product Name should contain only alphabets and space
+#
+#product.price.absent=Please provide product price
+#account.price.invalid=Please provide correct price bw 100 to 100000
+
+info.key=default
+spring.profiles.active=test
+
+
+
+
+server.port=8090
+server.servlet.context-path=/productapp
+spring.h2.console.enabled=true
+
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=foo
+spring.datasource.password=foo
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+# Custom H2 Console URL
+spring.h2.console.path=/h2
+
+spring.jpa.hibernate.ddl-auto=update
+
+
+
+
+
+@Configuration
+@EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class,
+ DataSourceTransactionManagerAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
+@Profile ("client_app_profile_name")
+public class ClientAppConfiguration {
+    //it can be left blank
+}
+
+
