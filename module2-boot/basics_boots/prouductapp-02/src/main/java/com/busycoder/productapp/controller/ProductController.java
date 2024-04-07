@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RequestMapping(path = "api")
+@RequestMapping(path = "api/v1")
 @RestController//@Controller+ @ResponseBody(it trigger parser to convert java to json object)
 public class ProductController {
 
@@ -28,12 +28,12 @@ public class ProductController {
     }
     //----get all products
     //ResponseEnitty= data + http status code
-    @GetMapping(path = "v1/products", produces ={ MediaType.APPLICATION_JSON_VALUE,  MediaType.APPLICATION_XML_VALUE})
+    @GetMapping(path = "products", produces ={ MediaType.APPLICATION_JSON_VALUE,  MediaType.APPLICATION_XML_VALUE})
     public ResponseEntity<List<Product>> getAll(){
         List<Product> products= productService.findAll();
         return ResponseEntity.status(HttpStatus.OK).body(products);
     }
-    @GetMapping(path = "v2/products", produces ={ MediaType.APPLICATION_JSON_VALUE,  MediaType.APPLICATION_XML_VALUE})
+    @GetMapping(path = "products", produces ={ MediaType.APPLICATION_JSON_VALUE,  MediaType.APPLICATION_XML_VALUE})
     public ResponseEntity<List<Product>> getAllV2(){
         List<Product> products= productService.findAll();
         return ResponseEntity.status(HttpStatus.OK).body(products);

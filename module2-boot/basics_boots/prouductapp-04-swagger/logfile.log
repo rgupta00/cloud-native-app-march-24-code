@@ -1,0 +1,26 @@
+INFO  | 2024-04-07 22:31:38 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:50) - Starting Prouductapp02Application using Java 21.0.2 with PID 11788 (C:\cloud-native-app-march-24-code\module2-boot\basics_boots\prouductapp-04-swagger\target\classes started by busyc in C:\cloud-native-app-march-24-code\module2-boot\basics_boots\prouductapp-04-swagger)
+INFO  | 2024-04-07 22:31:38 | [main] boot.SpringApplication (SpringApplication.java:654) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2024-04-07 22:31:40 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  | 2024-04-07 22:31:40 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interface.
+INFO  | 2024-04-07 22:31:41 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:109) - Tomcat initialized with port 8090 (http)
+INFO  | 2024-04-07 22:31:41 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-07 22:31:41 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting service [Tomcat]
+INFO  | 2024-04-07 22:31:41 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/10.1.19]
+INFO  | 2024-04-07 22:31:42 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+INFO  | 2024-04-07 22:31:42 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 3477 ms
+INFO  | 2024-04-07 22:31:43 | [main] persistenceunit.SpringPersistenceUnitInfo (SpringPersistenceUnitInfo.java:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+INFO  | 2024-04-07 22:31:43 | [main] hikari.HikariDataSource (HikariDataSource.java:110) - HikariPool-1 - Starting...
+INFO  | 2024-04-07 22:31:43 | [main] pool.HikariPool (HikariPool.java:565) - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@684b26b7
+INFO  | 2024-04-07 22:31:43 | [main] hikari.HikariDataSource (HikariDataSource.java:123) - HikariPool-1 - Start completed.
+INFO  | 2024-04-07 22:31:45 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  | 2024-04-07 22:31:46 | [main] jpa.JpaBaseConfiguration$JpaWebConfiguration (JpaBaseConfiguration.java:232) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+DEBUG | 2024-04-07 22:31:47 | [main] handler.AbstractHandlerMethodMapping (AbstractHandlerMethodMapping.java:366) - 13 mappings in 'requestMappingHandlerMapping'
+DEBUG | 2024-04-07 22:31:47 | [main] handler.SimpleUrlHandlerMapping (SimpleUrlHandlerMapping.java:187) - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+DEBUG | 2024-04-07 22:31:47 | [main] annotation.RequestMappingHandlerAdapter (RequestMappingHandlerAdapter.java:634) - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+DEBUG | 2024-04-07 22:31:47 | [main] annotation.ExceptionHandlerExceptionResolver (ExceptionHandlerExceptionResolver.java:305) - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+INFO  | 2024-04-07 22:31:48 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-07 22:31:48 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:241) - Tomcat started on port 8090 (http) with context path '/productapp'
+INFO  | 2024-04-07 22:31:48 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:56) - Started Prouductapp02Application in 10.785 seconds (process running for 12.3)
+INFO  | 2024-04-07 22:32:11 | [SpringApplicationShutdownHook] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-04-07 22:32:11 | [SpringApplicationShutdownHook] hikari.HikariDataSource (HikariDataSource.java:350) - HikariPool-1 - Shutdown initiated...
+INFO  | 2024-04-07 22:32:11 | [SpringApplicationShutdownHook] hikari.HikariDataSource (HikariDataSource.java:352) - HikariPool-1 - Shutdown completed.

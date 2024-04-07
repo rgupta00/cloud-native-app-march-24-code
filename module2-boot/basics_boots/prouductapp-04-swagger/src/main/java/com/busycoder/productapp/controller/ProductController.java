@@ -2,6 +2,11 @@ package com.busycoder.productapp.controller;
 
 import com.busycoder.productapp.repo.Product;
 import com.busycoder.productapp.service.ProductService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -11,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@RequestMapping(path = "api/v1")
 @RestController//@Controller+ @ResponseBody(it trigger parser to convert java to json object)
 public class ProductController {
 
@@ -27,7 +33,15 @@ public class ProductController {
         List<Product> products= productService.findAll();
         return ResponseEntity.status(HttpStatus.OK).body(products);
     }
-
+    @Operation(summary = "Get a product by its id")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Found the product",
+                    content = { @Content(mediaType = "application/json",
+                            schema = @Schema(implementation = Product.class)) }),
+            @ApiResponse(responseCode = "400", description = "Invalid id supplied",
+                    content = @Content),
+            @ApiResponse(responseCode = "404", description = "Product not found",
+                    content = @Content) })
     //get by id
     @GetMapping(path = "products/{id}")
     public ResponseEntity<Product> getById(@PathVariable int id){
