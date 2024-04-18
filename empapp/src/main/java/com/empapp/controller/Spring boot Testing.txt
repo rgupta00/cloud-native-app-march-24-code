@@ -1,0 +1,151 @@
+Spring boot Junit mockito:
+-------------------------
+step 1: application.properties
+
+server.port=8080
+#server.servlet.context-path=/empapp
+spring.h2.console.enabled=true
+
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=foo
+spring.datasource.password=foo
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+# Custom H2 Console URL
+spring.h2.console.path=/h2
+
+spring.jpa.hibernate.ddl-auto=update
+
+
+repo layer:
+----------
+@Data
+@NoArgsConstructor
+@Builder
+@AllArgsConstructor
+@Entity
+@Table(name = "employee")
+public class Employee {
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    private String name;
+    private int salary;
+
+    public Employee(String name, int salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+}
+
+@Repository
+public interface EmployeeRepo extends JpaRepository<Employee,Integer> {
+}
+
+
+public class EmployeeNotFoundException extends RuntimeException{
+
+    public EmployeeNotFoundException(String message) {
+        super(message);
+    }
+}
+
+service layer:
+----------
+
+public interface EmployeeService {
+    Employee saveEmployee(Employee employee);
+    List<Employee> getAllEmployees();
+    Employee getEmployeeById(int id);
+    Employee updateEmployee(int id , Employee employee);
+    void deleteEmployee(int id);
+}
+
+
+
+@Service
+public class EmployeeServiceImpl implements EmployeeService {
+
+    private EmployeeRepo employeeRepository;
+
+    @Autowired
+    public EmployeeServiceImpl(EmployeeRepo employeeRepository) {
+        this.employeeRepository = employeeRepository;
+    }
+
+    @Override
+    public Employee saveEmployee(Employee employee) {
+        return employeeRepository.save(employee);
+    }
+
+    @Override
+    public List<Employee> getAllEmployees() {
+        return employeeRepository.findAll();
+    }
+
+    @Override
+    public Employee getEmployeeById(int id) {
+        return employeeRepository.findById(id).orElseThrow(()-> new EmployeeNotFoundException("emp not found"));
+    }
+
+    @Override
+    public Employee updateEmployee(int id, Employee employee) {
+        Employee employeeToUpdate= getEmployeeById(id);
+        employeeToUpdate.setSalary(employee.getSalary());
+        return employeeRepository.save(employeeToUpdate);
+    }
+
+    @Override
+    public void deleteEmployee(int id) {
+        employeeRepository.deleteById(id);
+    }
+}
+
+
+Controller layer:
+------------------
+
+@RestController
+@RequestMapping("/api/employees")
+public class EmployeeController {
+
+    private EmployeeService employeeService;
+
+    public EmployeeController(EmployeeService employeeService) {
+        this.employeeService = employeeService;
+    }
+
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+    public Employee createEmployee(@RequestBody Employee employee){
+        return employeeService.saveEmployee(employee);
+    }
+
+    @GetMapping
+    public List<Employee> getAllEmployees(){
+        return employeeService.getAllEmployees();
+    }
+
+    @GetMapping("{id}")
+    public ResponseEntity<Employee> getEmployeeById(@PathVariable("id") int employeeId){
+        Employee employee= employeeService.getEmployeeById(employeeId);
+        return ResponseEntity.status(HttpStatus.OK).body(employee);
+
+    }
+
+    @PutMapping("{id}")
+    public ResponseEntity<Employee> updateEmployee(@PathVariable("id") int employeeId,
+                                                   @RequestBody Employee employee){
+        return ResponseEntity.status(HttpStatus.OK).body(employeeService.updateEmployee(employeeId, employee));
+    }
+
+    @DeleteMapping("{id}")
+    public ResponseEntity<String> deleteEmployee(@PathVariable("id") int employeeId){
+
+        employeeService.deleteEmployee(employeeId);
+
+        return new ResponseEntity<String>("Employee deleted successfully!.", HttpStatus.OK);
+
+    }
+
+}

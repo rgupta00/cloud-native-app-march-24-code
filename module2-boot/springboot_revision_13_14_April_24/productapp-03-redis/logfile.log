@@ -1,0 +1,1426 @@
+INFO  | 2024-04-13 21:02:21 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:50) - Starting Productapp01Application using Java 21.0.2 with PID 9924 (C:\cloud-native-app-march-24-code\module2-boot\springboot_revision\productapp-01\target\classes started by busyc in C:\cloud-native-app-march-24-code\module2-boot\springboot_revision\productapp-01)
+INFO  | 2024-04-13 21:02:21 | [main] boot.SpringApplication (SpringApplication.java:654) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2024-04-13 21:02:23 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  | 2024-04-13 21:02:23 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 96 ms. Found 1 JPA repository interface.
+INFO  | 2024-04-13 21:02:25 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:109) - Tomcat initialized with port 8090 (http)
+INFO  | 2024-04-13 21:02:25 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-13 21:02:25 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting service [Tomcat]
+INFO  | 2024-04-13 21:02:25 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/10.1.19]
+INFO  | 2024-04-13 21:02:25 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+INFO  | 2024-04-13 21:02:25 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 3375 ms
+INFO  | 2024-04-13 21:02:27 | [main] persistenceunit.SpringPersistenceUnitInfo (SpringPersistenceUnitInfo.java:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+INFO  | 2024-04-13 21:02:27 | [main] hikari.HikariDataSource (HikariDataSource.java:110) - HikariPool-1 - Starting...
+INFO  | 2024-04-13 21:02:28 | [main] pool.HikariPool (HikariPool.java:565) - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38ebc866
+INFO  | 2024-04-13 21:02:28 | [main] hikari.HikariDataSource (HikariDataSource.java:123) - HikariPool-1 - Start completed.
+INFO  | 2024-04-13 21:02:29 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  | 2024-04-13 21:02:31 | [main] jpa.JpaBaseConfiguration$JpaWebConfiguration (JpaBaseConfiguration.java:232) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+DEBUG | 2024-04-13 21:02:32 | [main] handler.AbstractHandlerMethodMapping (AbstractHandlerMethodMapping.java:366) - 7 mappings in 'requestMappingHandlerMapping'
+DEBUG | 2024-04-13 21:02:32 | [main] handler.SimpleUrlHandlerMapping (SimpleUrlHandlerMapping.java:187) - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+DEBUG | 2024-04-13 21:02:33 | [main] annotation.RequestMappingHandlerAdapter (RequestMappingHandlerAdapter.java:634) - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+DEBUG | 2024-04-13 21:02:33 | [main] annotation.ExceptionHandlerExceptionResolver (ExceptionHandlerExceptionResolver.java:305) - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+INFO  | 2024-04-13 21:02:33 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-13 21:02:33 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:241) - Tomcat started on port 8090 (http) with context path '/productapp'
+INFO  | 2024-04-13 21:02:33 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:56) - Started Productapp01Application in 13.04 seconds (process running for 14.677)
+INFO  | 2024-04-13 21:02:40 | [SpringApplicationShutdownHook] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-04-13 21:02:40 | [SpringApplicationShutdownHook] hikari.HikariDataSource (HikariDataSource.java:350) - HikariPool-1 - Shutdown initiated...
+INFO  | 2024-04-13 21:02:41 | [SpringApplicationShutdownHook] hikari.HikariDataSource (HikariDataSource.java:352) - HikariPool-1 - Shutdown completed.
+INFO  | 2024-04-13 21:26:30 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:50) - Starting Productapp01Application using Java 21.0.2 with PID 21240 (C:\cloud-native-app-march-24-code\module2-boot\springboot_revision\productapp-01\target\classes started by busyc in C:\cloud-native-app-march-24-code\module2-boot\springboot_revision\productapp-01)
+INFO  | 2024-04-13 21:26:30 | [main] boot.SpringApplication (SpringApplication.java:654) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2024-04-13 21:26:32 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  | 2024-04-13 21:26:32 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 109 ms. Found 1 JPA repository interface.
+INFO  | 2024-04-13 21:26:34 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:109) - Tomcat initialized with port 8090 (http)
+INFO  | 2024-04-13 21:26:34 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-13 21:26:34 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting service [Tomcat]
+INFO  | 2024-04-13 21:26:34 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/10.1.19]
+INFO  | 2024-04-13 21:26:34 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+INFO  | 2024-04-13 21:26:34 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 4130 ms
+INFO  | 2024-04-13 21:26:37 | [main] persistenceunit.SpringPersistenceUnitInfo (SpringPersistenceUnitInfo.java:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+INFO  | 2024-04-13 21:26:37 | [main] hikari.HikariDataSource (HikariDataSource.java:110) - HikariPool-1 - Starting...
+INFO  | 2024-04-13 21:26:37 | [main] pool.HikariPool (HikariPool.java:565) - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f9a8ddc
+INFO  | 2024-04-13 21:26:37 | [main] hikari.HikariDataSource (HikariDataSource.java:123) - HikariPool-1 - Start completed.
+INFO  | 2024-04-13 21:26:40 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  | 2024-04-13 21:26:45 | [main] jpa.JpaBaseConfiguration$JpaWebConfiguration (JpaBaseConfiguration.java:232) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+DEBUG | 2024-04-13 21:26:46 | [main] handler.AbstractHandlerMethodMapping (AbstractHandlerMethodMapping.java:366) - 11 mappings in 'requestMappingHandlerMapping'
+DEBUG | 2024-04-13 21:26:46 | [main] handler.SimpleUrlHandlerMapping (SimpleUrlHandlerMapping.java:187) - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+DEBUG | 2024-04-13 21:26:46 | [main] annotation.RequestMappingHandlerAdapter (RequestMappingHandlerAdapter.java:634) - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+DEBUG | 2024-04-13 21:26:47 | [main] annotation.ExceptionHandlerExceptionResolver (ExceptionHandlerExceptionResolver.java:305) - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+INFO  | 2024-04-13 21:26:48 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-13 21:26:48 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:241) - Tomcat started on port 8090 (http) with context path '/productapp'
+INFO  | 2024-04-13 21:26:48 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:56) - Started Productapp01Application in 18.608 seconds (process running for 20.272)
+INFO  | 2024-04-13 21:27:05 | [http-nio-8090-exec-2] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  | 2024-04-13 21:27:05 | [http-nio-8090-exec-2] servlet.FrameworkServlet (FrameworkServlet.java:532) - Initializing Servlet 'dispatcherServlet'
+DEBUG | 2024-04-13 21:27:05 | [http-nio-8090-exec-2] servlet.DispatcherServlet (DispatcherServlet.java:533) - Detected StandardServletMultipartResolver
+DEBUG | 2024-04-13 21:27:05 | [http-nio-8090-exec-2] servlet.DispatcherServlet (DispatcherServlet.java:557) - Detected AcceptHeaderLocaleResolver
+DEBUG | 2024-04-13 21:27:05 | [http-nio-8090-exec-2] servlet.DispatcherServlet (DispatcherServlet.java:583) - Detected FixedThemeResolver
+DEBUG | 2024-04-13 21:27:05 | [http-nio-8090-exec-2] servlet.DispatcherServlet (DispatcherServlet.java:733) - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@77d7d2d0
+DEBUG | 2024-04-13 21:27:05 | [http-nio-8090-exec-2] servlet.DispatcherServlet (DispatcherServlet.java:797) - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5f6b1f19
+DEBUG | 2024-04-13 21:27:05 | [http-nio-8090-exec-2] servlet.FrameworkServlet (FrameworkServlet.java:549) - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+INFO  | 2024-04-13 21:27:05 | [http-nio-8090-exec-2] servlet.FrameworkServlet (FrameworkServlet.java:554) - Completed initialization in 1 ms
+DEBUG | 2024-04-13 21:27:05 | [http-nio-8090-exec-2] log.LogFormatUtils (LogFormatUtils.java:120) - GET "/productapp/api/products", parameters={}
+DEBUG | 2024-04-13 21:27:05 | [http-nio-8090-exec-2] handler.AbstractHandlerMapping (AbstractHandlerMapping.java:531) - Mapped to com.productapp.controller.ProductRestController#getAll()
+INFO  | 2024-04-13 21:27:05 | [http-nio-8090-exec-2] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called getAll
+INFO  | 2024-04-13 21:27:05 | [http-nio-8090-exec-2] service.ProductServiceImpl (ProductServiceImpl.java:33) - database is hit get all is called............
+DEBUG | 2024-04-13 21:27:05 | [http-nio-8090-exec-2] annotation.AbstractMessageConverterMethodProcessor (AbstractMessageConverterMethodProcessor.java:275) - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+DEBUG | 2024-04-13 21:27:05 | [http-nio-8090-exec-2] log.LogFormatUtils (LogFormatUtils.java:120) - Writing [[Product(id=1, name=laptop, price=670000.00), Product(id=2, name=laptop, price=120000.00), Product(i (truncated)...]
+DEBUG | 2024-04-13 21:27:05 | [http-nio-8090-exec-2] servlet.FrameworkServlet (FrameworkServlet.java:1138) - Completed 200 OK
+DEBUG | 2024-04-13 21:27:28 | [http-nio-8090-exec-3] log.LogFormatUtils (LogFormatUtils.java:120) - GET "/productapp/api/products", parameters={}
+DEBUG | 2024-04-13 21:27:28 | [http-nio-8090-exec-3] handler.AbstractHandlerMapping (AbstractHandlerMapping.java:531) - Mapped to com.productapp.controller.ProductRestController#getAll()
+INFO  | 2024-04-13 21:27:28 | [http-nio-8090-exec-3] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called getAll
+INFO  | 2024-04-13 21:27:28 | [http-nio-8090-exec-3] service.ProductServiceImpl (ProductServiceImpl.java:33) - database is hit get all is called............
+DEBUG | 2024-04-13 21:27:28 | [http-nio-8090-exec-3] annotation.AbstractMessageConverterMethodProcessor (AbstractMessageConverterMethodProcessor.java:275) - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+DEBUG | 2024-04-13 21:27:28 | [http-nio-8090-exec-3] log.LogFormatUtils (LogFormatUtils.java:120) - Writing [[Product(id=1, name=laptop, price=670000.00), Product(id=2, name=laptop, price=120000.00), Product(i (truncated)...]
+DEBUG | 2024-04-13 21:27:28 | [http-nio-8090-exec-3] servlet.FrameworkServlet (FrameworkServlet.java:1138) - Completed 200 OK
+INFO  | 2024-04-13 21:28:46 | [SpringApplicationShutdownHook] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-04-13 21:28:46 | [SpringApplicationShutdownHook] hikari.HikariDataSource (HikariDataSource.java:350) - HikariPool-1 - Shutdown initiated...
+INFO  | 2024-04-13 21:28:46 | [SpringApplicationShutdownHook] hikari.HikariDataSource (HikariDataSource.java:352) - HikariPool-1 - Shutdown completed.
+INFO  | 2024-04-13 21:28:55 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:50) - Starting Productapp01Application using Java 21.0.2 with PID 22200 (C:\cloud-native-app-march-24-code\module2-boot\springboot_revision\productapp-01\target\classes started by busyc in C:\cloud-native-app-march-24-code\module2-boot\springboot_revision\productapp-01)
+INFO  | 2024-04-13 21:28:55 | [main] boot.SpringApplication (SpringApplication.java:654) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2024-04-13 21:28:57 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  | 2024-04-13 21:28:57 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interface.
+INFO  | 2024-04-13 21:28:59 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:109) - Tomcat initialized with port 8090 (http)
+INFO  | 2024-04-13 21:28:59 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-13 21:28:59 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting service [Tomcat]
+INFO  | 2024-04-13 21:28:59 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/10.1.19]
+INFO  | 2024-04-13 21:28:59 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+INFO  | 2024-04-13 21:28:59 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 3868 ms
+INFO  | 2024-04-13 21:29:01 | [main] persistenceunit.SpringPersistenceUnitInfo (SpringPersistenceUnitInfo.java:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+INFO  | 2024-04-13 21:29:01 | [main] hikari.HikariDataSource (HikariDataSource.java:110) - HikariPool-1 - Starting...
+INFO  | 2024-04-13 21:29:02 | [main] pool.HikariPool (HikariPool.java:565) - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2cf88901
+INFO  | 2024-04-13 21:29:02 | [main] hikari.HikariDataSource (HikariDataSource.java:123) - HikariPool-1 - Start completed.
+INFO  | 2024-04-13 21:29:04 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  | 2024-04-13 21:29:06 | [main] jpa.JpaBaseConfiguration$JpaWebConfiguration (JpaBaseConfiguration.java:232) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+DEBUG | 2024-04-13 21:29:07 | [main] handler.AbstractHandlerMethodMapping (AbstractHandlerMethodMapping.java:366) - 11 mappings in 'requestMappingHandlerMapping'
+DEBUG | 2024-04-13 21:29:08 | [main] handler.SimpleUrlHandlerMapping (SimpleUrlHandlerMapping.java:187) - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+DEBUG | 2024-04-13 21:29:08 | [main] annotation.RequestMappingHandlerAdapter (RequestMappingHandlerAdapter.java:634) - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+DEBUG | 2024-04-13 21:29:08 | [main] annotation.ExceptionHandlerExceptionResolver (ExceptionHandlerExceptionResolver.java:305) - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+INFO  | 2024-04-13 21:29:09 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-13 21:29:09 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:241) - Tomcat started on port 8090 (http) with context path '/productapp'
+INFO  | 2024-04-13 21:29:09 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:56) - Started Productapp01Application in 14.973 seconds (process running for 16.474)
+INFO  | 2024-04-13 21:29:15 | [http-nio-8090-exec-1] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  | 2024-04-13 21:29:15 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:532) - Initializing Servlet 'dispatcherServlet'
+DEBUG | 2024-04-13 21:29:15 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:533) - Detected StandardServletMultipartResolver
+DEBUG | 2024-04-13 21:29:15 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:557) - Detected AcceptHeaderLocaleResolver
+DEBUG | 2024-04-13 21:29:15 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:583) - Detected FixedThemeResolver
+DEBUG | 2024-04-13 21:29:15 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:733) - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6b83ec49
+DEBUG | 2024-04-13 21:29:15 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:797) - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7e9d171c
+DEBUG | 2024-04-13 21:29:15 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:549) - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+INFO  | 2024-04-13 21:29:15 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:554) - Completed initialization in 3 ms
+DEBUG | 2024-04-13 21:29:15 | [http-nio-8090-exec-1] log.LogFormatUtils (LogFormatUtils.java:120) - GET "/productapp/api/products", parameters={}
+DEBUG | 2024-04-13 21:29:15 | [http-nio-8090-exec-1] handler.AbstractHandlerMapping (AbstractHandlerMapping.java:531) - Mapped to com.productapp.controller.ProductRestController#getAll()
+INFO  | 2024-04-13 21:29:15 | [http-nio-8090-exec-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called getAll
+INFO  | 2024-04-13 21:29:15 | [http-nio-8090-exec-1] service.ProductServiceImpl (ProductServiceImpl.java:34) - database is hit get all is called............
+DEBUG | 2024-04-13 21:29:15 | [http-nio-8090-exec-1] annotation.AbstractMessageConverterMethodProcessor (AbstractMessageConverterMethodProcessor.java:275) - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+DEBUG | 2024-04-13 21:29:15 | [http-nio-8090-exec-1] log.LogFormatUtils (LogFormatUtils.java:120) - Writing [[Product(id=1, name=laptop, price=670000.00), Product(id=2, name=laptop, price=120000.00), Product(i (truncated)...]
+DEBUG | 2024-04-13 21:29:15 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:1138) - Completed 200 OK
+DEBUG | 2024-04-13 21:29:25 | [http-nio-8090-exec-3] log.LogFormatUtils (LogFormatUtils.java:120) - GET "/productapp/api/products", parameters={}
+DEBUG | 2024-04-13 21:29:25 | [http-nio-8090-exec-3] handler.AbstractHandlerMapping (AbstractHandlerMapping.java:531) - Mapped to com.productapp.controller.ProductRestController#getAll()
+DEBUG | 2024-04-13 21:29:25 | [http-nio-8090-exec-3] annotation.AbstractMessageConverterMethodProcessor (AbstractMessageConverterMethodProcessor.java:275) - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+DEBUG | 2024-04-13 21:29:25 | [http-nio-8090-exec-3] log.LogFormatUtils (LogFormatUtils.java:120) - Writing [[Product(id=1, name=laptop, price=670000.00), Product(id=2, name=laptop, price=120000.00), Product(i (truncated)...]
+DEBUG | 2024-04-13 21:29:25 | [http-nio-8090-exec-3] servlet.FrameworkServlet (FrameworkServlet.java:1138) - Completed 200 OK
+INFO  | 2024-04-13 21:29:39 | [SpringApplicationShutdownHook] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-04-13 21:29:39 | [SpringApplicationShutdownHook] hikari.HikariDataSource (HikariDataSource.java:350) - HikariPool-1 - Shutdown initiated...
+INFO  | 2024-04-13 21:29:39 | [SpringApplicationShutdownHook] hikari.HikariDataSource (HikariDataSource.java:352) - HikariPool-1 - Shutdown completed.
+INFO  | 2024-04-13 21:40:08 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:50) - Starting Productapp01Application using Java 21.0.2 with PID 2276 (C:\cloud-native-app-march-24-code\module2-boot\springboot_revision\productapp-01\target\classes started by busyc in C:\cloud-native-app-march-24-code\module2-boot\springboot_revision\productapp-01)
+INFO  | 2024-04-13 21:40:08 | [main] boot.SpringApplication (SpringApplication.java:654) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2024-04-13 21:40:10 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  | 2024-04-13 21:40:10 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interface.
+INFO  | 2024-04-13 21:40:12 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:109) - Tomcat initialized with port 8090 (http)
+INFO  | 2024-04-13 21:40:12 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-13 21:40:12 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting service [Tomcat]
+INFO  | 2024-04-13 21:40:12 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/10.1.19]
+INFO  | 2024-04-13 21:40:12 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+INFO  | 2024-04-13 21:40:12 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 4106 ms
+INFO  | 2024-04-13 21:40:14 | [main] persistenceunit.SpringPersistenceUnitInfo (SpringPersistenceUnitInfo.java:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+INFO  | 2024-04-13 21:40:15 | [main] hikari.HikariDataSource (HikariDataSource.java:110) - HikariPool-1 - Starting...
+INFO  | 2024-04-13 21:40:15 | [main] pool.HikariPool (HikariPool.java:565) - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c3007d
+INFO  | 2024-04-13 21:40:15 | [main] hikari.HikariDataSource (HikariDataSource.java:123) - HikariPool-1 - Start completed.
+INFO  | 2024-04-13 21:40:17 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  | 2024-04-13 21:40:19 | [main] jpa.JpaBaseConfiguration$JpaWebConfiguration (JpaBaseConfiguration.java:232) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+DEBUG | 2024-04-13 21:40:20 | [main] handler.AbstractHandlerMethodMapping (AbstractHandlerMethodMapping.java:366) - 11 mappings in 'requestMappingHandlerMapping'
+DEBUG | 2024-04-13 21:40:21 | [main] handler.SimpleUrlHandlerMapping (SimpleUrlHandlerMapping.java:187) - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+DEBUG | 2024-04-13 21:40:21 | [main] annotation.RequestMappingHandlerAdapter (RequestMappingHandlerAdapter.java:634) - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+DEBUG | 2024-04-13 21:40:21 | [main] annotation.ExceptionHandlerExceptionResolver (ExceptionHandlerExceptionResolver.java:305) - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+INFO  | 2024-04-13 21:40:22 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-13 21:40:22 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:241) - Tomcat started on port 8090 (http) with context path '/productapp'
+INFO  | 2024-04-13 21:40:22 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:56) - Started Productapp01Application in 15.255 seconds (process running for 16.831)
+INFO  | 2024-04-13 21:40:35 | [SpringApplicationShutdownHook] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-04-13 21:40:35 | [SpringApplicationShutdownHook] hikari.HikariDataSource (HikariDataSource.java:350) - HikariPool-1 - Shutdown initiated...
+INFO  | 2024-04-13 21:40:35 | [SpringApplicationShutdownHook] hikari.HikariDataSource (HikariDataSource.java:352) - HikariPool-1 - Shutdown completed.
+INFO  | 2024-04-13 21:45:07 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:50) - Starting Productapp01Application using Java 21.0.2 with PID 15820 (C:\cloud-native-app-march-24-code\module2-boot\springboot_revision\productapp-01\target\classes started by busyc in C:\cloud-native-app-march-24-code\module2-boot\springboot_revision\productapp-01)
+INFO  | 2024-04-13 21:45:07 | [main] boot.SpringApplication (SpringApplication.java:654) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2024-04-13 21:45:09 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  | 2024-04-13 21:45:09 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interface.
+INFO  | 2024-04-13 21:45:11 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:109) - Tomcat initialized with port 8090 (http)
+INFO  | 2024-04-13 21:45:11 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-13 21:45:11 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting service [Tomcat]
+INFO  | 2024-04-13 21:45:11 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/10.1.19]
+INFO  | 2024-04-13 21:45:11 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+INFO  | 2024-04-13 21:45:11 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 4023 ms
+INFO  | 2024-04-13 21:45:13 | [main] persistenceunit.SpringPersistenceUnitInfo (SpringPersistenceUnitInfo.java:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+INFO  | 2024-04-13 21:45:13 | [main] hikari.HikariDataSource (HikariDataSource.java:110) - HikariPool-1 - Starting...
+INFO  | 2024-04-13 21:45:14 | [main] pool.HikariPool (HikariPool.java:565) - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55f6f965
+INFO  | 2024-04-13 21:45:14 | [main] hikari.HikariDataSource (HikariDataSource.java:123) - HikariPool-1 - Start completed.
+INFO  | 2024-04-13 21:45:16 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  | 2024-04-13 21:45:18 | [main] jpa.JpaBaseConfiguration$JpaWebConfiguration (JpaBaseConfiguration.java:232) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+DEBUG | 2024-04-13 21:45:19 | [main] handler.AbstractHandlerMethodMapping (AbstractHandlerMethodMapping.java:366) - 11 mappings in 'requestMappingHandlerMapping'
+DEBUG | 2024-04-13 21:45:19 | [main] handler.SimpleUrlHandlerMapping (SimpleUrlHandlerMapping.java:187) - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+DEBUG | 2024-04-13 21:45:20 | [main] annotation.RequestMappingHandlerAdapter (RequestMappingHandlerAdapter.java:634) - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+DEBUG | 2024-04-13 21:45:20 | [main] annotation.ExceptionHandlerExceptionResolver (ExceptionHandlerExceptionResolver.java:305) - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+INFO  | 2024-04-13 21:45:21 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-13 21:45:21 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:241) - Tomcat started on port 8090 (http) with context path '/productapp'
+INFO  | 2024-04-13 21:45:21 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:56) - Started Productapp01Application in 15.439 seconds (process running for 17.077)
+INFO  | 2024-04-13 21:45:25 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:45:30 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:45:35 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:45:40 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:45:45 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:45:50 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:45:54 | [SpringApplicationShutdownHook] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-04-13 21:45:54 | [SpringApplicationShutdownHook] hikari.HikariDataSource (HikariDataSource.java:350) - HikariPool-1 - Shutdown initiated...
+INFO  | 2024-04-13 21:45:54 | [SpringApplicationShutdownHook] hikari.HikariDataSource (HikariDataSource.java:352) - HikariPool-1 - Shutdown completed.
+INFO  | 2024-04-13 21:51:49 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:50) - Starting Productapp01Application using Java 21.0.2 with PID 18508 (C:\cloud-native-app-march-24-code\module2-boot\springboot_revision\productapp-01\target\classes started by busyc in C:\cloud-native-app-march-24-code\module2-boot\springboot_revision\productapp-01)
+INFO  | 2024-04-13 21:51:49 | [main] boot.SpringApplication (SpringApplication.java:654) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2024-04-13 21:51:51 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  | 2024-04-13 21:51:51 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 84 ms. Found 1 JPA repository interface.
+INFO  | 2024-04-13 21:51:54 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:109) - Tomcat initialized with port 8090 (http)
+INFO  | 2024-04-13 21:51:54 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-13 21:51:54 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting service [Tomcat]
+INFO  | 2024-04-13 21:51:54 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/10.1.19]
+INFO  | 2024-04-13 21:51:54 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  | 2024-04-13 21:51:54 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+INFO  | 2024-04-13 21:51:54 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 4559 ms
+INFO  | 2024-04-13 21:51:56 | [main] persistenceunit.SpringPersistenceUnitInfo (SpringPersistenceUnitInfo.java:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+INFO  | 2024-04-13 21:51:56 | [main] hikari.HikariDataSource (HikariDataSource.java:110) - HikariPool-1 - Starting...
+INFO  | 2024-04-13 21:51:57 | [main] pool.HikariPool (HikariPool.java:565) - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@194e78af
+INFO  | 2024-04-13 21:51:57 | [main] hikari.HikariDataSource (HikariDataSource.java:123) - HikariPool-1 - Start completed.
+INFO  | 2024-04-13 21:51:59 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  | 2024-04-13 21:52:01 | [main] jpa.JpaBaseConfiguration$JpaWebConfiguration (JpaBaseConfiguration.java:232) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+DEBUG | 2024-04-13 21:52:02 | [main] handler.AbstractHandlerMethodMapping (AbstractHandlerMethodMapping.java:366) - 12 mappings in 'requestMappingHandlerMapping'
+DEBUG | 2024-04-13 21:52:03 | [main] handler.SimpleUrlHandlerMapping (SimpleUrlHandlerMapping.java:187) - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+DEBUG | 2024-04-13 21:52:03 | [main] annotation.RequestMappingHandlerAdapter (RequestMappingHandlerAdapter.java:634) - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+DEBUG | 2024-04-13 21:52:04 | [main] annotation.ExceptionHandlerExceptionResolver (ExceptionHandlerExceptionResolver.java:305) - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+INFO  | 2024-04-13 21:52:05 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-13 21:52:05 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:241) - Tomcat started on port 8090 (http) with context path '/productapp'
+INFO  | 2024-04-13 21:52:05 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:56) - Started Productapp01Application in 16.621 seconds (process running for 18.214)
+INFO  | 2024-04-13 21:52:10 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:52:15 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:52:17 | [http-nio-8090-exec-1] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  | 2024-04-13 21:52:17 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:532) - Initializing Servlet 'dispatcherServlet'
+DEBUG | 2024-04-13 21:52:17 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:533) - Detected StandardServletMultipartResolver
+DEBUG | 2024-04-13 21:52:17 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:557) - Detected AcceptHeaderLocaleResolver
+DEBUG | 2024-04-13 21:52:17 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:583) - Detected FixedThemeResolver
+DEBUG | 2024-04-13 21:52:17 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:733) - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@60f6d689
+DEBUG | 2024-04-13 21:52:17 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:797) - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1407b93f
+DEBUG | 2024-04-13 21:52:17 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:549) - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+INFO  | 2024-04-13 21:52:17 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:554) - Completed initialization in 8 ms
+DEBUG | 2024-04-13 21:52:17 | [http-nio-8090-exec-1] log.LogFormatUtils (LogFormatUtils.java:120) - GET "/productapp/products", parameters={}
+DEBUG | 2024-04-13 21:52:17 | [http-nio-8090-exec-1] handler.AbstractHandlerMapping (AbstractHandlerMapping.java:531) - Mapped to com.productapp.controller.ProductController#allProducts(ModelAndView)
+INFO  | 2024-04-13 21:52:17 | [http-nio-8090-exec-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called getAll
+INFO  | 2024-04-13 21:52:17 | [http-nio-8090-exec-1] service.ProductServiceImpl (ProductServiceImpl.java:37) - database is hit get all is called............
+DEBUG | 2024-04-13 21:52:17 | [http-nio-8090-exec-1] view.ContentNegotiatingViewResolver (ContentNegotiatingViewResolver.java:354) - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+DEBUG | 2024-04-13 21:52:17 | [http-nio-8090-exec-1] view.AbstractView (AbstractView.java:307) - View name 'products', model {modelAndView=ModelAndView [view="products"; model={products=[Product(id=1, name=laptop, price=670000.00), Product(id=2, name=laptop, price=120000.00), Product(id=3, name=laptop, price=120000.00), Product(id=4, name=laptop, price=120000.00), Product(id=5, name=laptop dell, price=42000.00), Product(id=6, name=table, price=12100.00)]}], org.springframework.validation.BindingResult.modelAndView=org.springframework.validation.BeanPropertyBindingResult: 0 errors, products=[Product(id=1, name=laptop, price=670000.00), Product(id=2, name=laptop, price=120000.00), Product(id=3, name=laptop, price=120000.00), Product(id=4, name=laptop, price=120000.00), Product(id=5, name=laptop dell, price=42000.00), Product(id=6, name=table, price=12100.00)]}
+DEBUG | 2024-04-13 21:52:17 | [http-nio-8090-exec-1] view.InternalResourceView (InternalResourceView.java:169) - Forwarding to [/WEB-INF/views/products.jsp]
+ERROR | 2024-04-13 21:52:18 | [http-nio-8090-exec-1] logging.DirectJDKLog (DirectJDKLog.java:175) - Servlet.service() for servlet [jsp] threw exception
+java.lang.ClassNotFoundException: javax.servlet.jsp.tagext.TagLibraryValidator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[?:?]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadFromParent(TomcatEmbeddedWebappClassLoader.java:113) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.doLoadClass(TomcatEmbeddedWebappClassLoader.java:86) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadClass(TomcatEmbeddedWebappClassLoader.java:70) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.createValidator(TagLibraryInfoImpl.java:355) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.<init>(TagLibraryInfoImpl.java:195) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseTaglibDirective(Parser.java:429) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:487) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1444) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:138) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+DEBUG | 2024-04-13 21:52:18 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:1435) - Error rendering view [org.springframework.web.servlet.view.InternalResourceView: name 'products'; URL [/WEB-INF/views/products.jsp]]
+jakarta.servlet.ServletException: java.lang.NoClassDefFoundError: javax/servlet/jsp/tagext/TagLibraryValidator
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:333) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.lang.NoClassDefFoundError: javax/servlet/jsp/tagext/TagLibraryValidator
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[?:?]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadFromParent(TomcatEmbeddedWebappClassLoader.java:113) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.doLoadClass(TomcatEmbeddedWebappClassLoader.java:86) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadClass(TomcatEmbeddedWebappClassLoader.java:70) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.createValidator(TagLibraryInfoImpl.java:355) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.<init>(TagLibraryInfoImpl.java:195) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseTaglibDirective(Parser.java:429) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:487) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1444) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:138) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	... 63 more
+Caused by: java.lang.ClassNotFoundException: javax.servlet.jsp.tagext.TagLibraryValidator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[?:?]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadFromParent(TomcatEmbeddedWebappClassLoader.java:113) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.doLoadClass(TomcatEmbeddedWebappClassLoader.java:86) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadClass(TomcatEmbeddedWebappClassLoader.java:70) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.createValidator(TagLibraryInfoImpl.java:355) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.<init>(TagLibraryInfoImpl.java:195) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseTaglibDirective(Parser.java:429) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:487) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1444) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:138) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	... 63 more
+DEBUG | 2024-04-13 21:52:18 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:1109) - Failed to complete request: jakarta.servlet.ServletException: java.lang.NoClassDefFoundError: javax/servlet/jsp/tagext/TagLibraryValidator
+ERROR | 2024-04-13 21:52:18 | [http-nio-8090-exec-1] logging.DirectJDKLog (DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/productapp] threw exception [java.lang.NoClassDefFoundError: javax/servlet/jsp/tagext/TagLibraryValidator] with root cause
+java.lang.ClassNotFoundException: javax.servlet.jsp.tagext.TagLibraryValidator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[?:?]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadFromParent(TomcatEmbeddedWebappClassLoader.java:113) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.doLoadClass(TomcatEmbeddedWebappClassLoader.java:86) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadClass(TomcatEmbeddedWebappClassLoader.java:70) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.createValidator(TagLibraryInfoImpl.java:355) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.<init>(TagLibraryInfoImpl.java:195) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseTaglibDirective(Parser.java:429) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:487) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1444) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:138) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+DEBUG | 2024-04-13 21:52:18 | [http-nio-8090-exec-1] log.LogFormatUtils (LogFormatUtils.java:120) - "ERROR" dispatch for GET "/productapp/error", parameters={}
+DEBUG | 2024-04-13 21:52:18 | [http-nio-8090-exec-1] handler.AbstractHandlerMapping (AbstractHandlerMapping.java:531) - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+DEBUG | 2024-04-13 21:52:18 | [http-nio-8090-exec-1] view.ContentNegotiatingViewResolver (ContentNegotiatingViewResolver.java:354) - Selected 'text/html' given [text/html, text/html;q=0.8]
+DEBUG | 2024-04-13 21:52:18 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:1135) - Exiting from "ERROR" dispatch, status 500
+INFO  | 2024-04-13 21:52:20 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:52:25 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:52:30 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:52:35 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:52:40 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:52:45 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:52:50 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:52:55 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:53:00 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:53:05 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:53:10 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:53:15 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:53:20 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:53:21 | [SpringApplicationShutdownHook] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-04-13 21:53:21 | [SpringApplicationShutdownHook] hikari.HikariDataSource (HikariDataSource.java:350) - HikariPool-1 - Shutdown initiated...
+INFO  | 2024-04-13 21:53:21 | [SpringApplicationShutdownHook] hikari.HikariDataSource (HikariDataSource.java:352) - HikariPool-1 - Shutdown completed.
+INFO  | 2024-04-13 21:53:30 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:50) - Starting Productapp01Application using Java 21.0.2 with PID 22684 (C:\cloud-native-app-march-24-code\module2-boot\springboot_revision\productapp-01\target\classes started by busyc in C:\cloud-native-app-march-24-code\module2-boot\springboot_revision\productapp-01)
+INFO  | 2024-04-13 21:53:30 | [main] boot.SpringApplication (SpringApplication.java:654) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2024-04-13 21:53:32 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  | 2024-04-13 21:53:32 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interface.
+INFO  | 2024-04-13 21:53:34 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:109) - Tomcat initialized with port 8090 (http)
+INFO  | 2024-04-13 21:53:34 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-13 21:53:34 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting service [Tomcat]
+INFO  | 2024-04-13 21:53:34 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/10.1.19]
+INFO  | 2024-04-13 21:53:34 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  | 2024-04-13 21:53:34 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+INFO  | 2024-04-13 21:53:34 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 4599 ms
+INFO  | 2024-04-13 21:53:36 | [main] persistenceunit.SpringPersistenceUnitInfo (SpringPersistenceUnitInfo.java:87) - No LoadTimeWeaver setup: ignoring JPA class transformer
+INFO  | 2024-04-13 21:53:37 | [main] hikari.HikariDataSource (HikariDataSource.java:110) - HikariPool-1 - Starting...
+INFO  | 2024-04-13 21:53:37 | [main] pool.HikariPool (HikariPool.java:565) - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e030feb
+INFO  | 2024-04-13 21:53:37 | [main] hikari.HikariDataSource (HikariDataSource.java:123) - HikariPool-1 - Start completed.
+INFO  | 2024-04-13 21:53:39 | [main] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  | 2024-04-13 21:53:41 | [main] jpa.JpaBaseConfiguration$JpaWebConfiguration (JpaBaseConfiguration.java:232) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+DEBUG | 2024-04-13 21:53:42 | [main] handler.AbstractHandlerMethodMapping (AbstractHandlerMethodMapping.java:366) - 12 mappings in 'requestMappingHandlerMapping'
+DEBUG | 2024-04-13 21:53:43 | [main] handler.SimpleUrlHandlerMapping (SimpleUrlHandlerMapping.java:187) - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+DEBUG | 2024-04-13 21:53:43 | [main] annotation.RequestMappingHandlerAdapter (RequestMappingHandlerAdapter.java:634) - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+DEBUG | 2024-04-13 21:53:43 | [main] annotation.ExceptionHandlerExceptionResolver (ExceptionHandlerExceptionResolver.java:305) - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+INFO  | 2024-04-13 21:53:44 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-13 21:53:44 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:241) - Tomcat started on port 8090 (http) with context path '/productapp'
+INFO  | 2024-04-13 21:53:44 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:56) - Started Productapp01Application in 15.68 seconds (process running for 17.346)
+INFO  | 2024-04-13 21:53:45 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:53:50 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:53:51 | [http-nio-8090-exec-1] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  | 2024-04-13 21:53:51 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:532) - Initializing Servlet 'dispatcherServlet'
+DEBUG | 2024-04-13 21:53:51 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:533) - Detected StandardServletMultipartResolver
+DEBUG | 2024-04-13 21:53:51 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:557) - Detected AcceptHeaderLocaleResolver
+DEBUG | 2024-04-13 21:53:51 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:583) - Detected FixedThemeResolver
+DEBUG | 2024-04-13 21:53:51 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:733) - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7c424dfe
+DEBUG | 2024-04-13 21:53:51 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:797) - Detected org.springframework.web.servlet.support.SessionFlashMapManager@170b27a7
+DEBUG | 2024-04-13 21:53:51 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:549) - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+INFO  | 2024-04-13 21:53:51 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:554) - Completed initialization in 8 ms
+DEBUG | 2024-04-13 21:53:51 | [http-nio-8090-exec-1] log.LogFormatUtils (LogFormatUtils.java:120) - GET "/productapp/products", parameters={}
+DEBUG | 2024-04-13 21:53:51 | [http-nio-8090-exec-1] handler.AbstractHandlerMapping (AbstractHandlerMapping.java:531) - Mapped to com.productapp.controller.ProductController#allProducts(ModelAndView)
+INFO  | 2024-04-13 21:53:51 | [http-nio-8090-exec-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called getAll
+INFO  | 2024-04-13 21:53:51 | [http-nio-8090-exec-1] service.ProductServiceImpl (ProductServiceImpl.java:37) - database is hit get all is called............
+DEBUG | 2024-04-13 21:53:52 | [http-nio-8090-exec-1] view.ContentNegotiatingViewResolver (ContentNegotiatingViewResolver.java:354) - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+DEBUG | 2024-04-13 21:53:52 | [http-nio-8090-exec-1] view.AbstractView (AbstractView.java:307) - View name 'products', model {modelAndView=ModelAndView [view="products"; model={products=[Product(id=1, name=laptop, price=670000.00), Product(id=2, name=laptop, price=120000.00), Product(id=3, name=laptop, price=120000.00), Product(id=4, name=laptop, price=120000.00), Product(id=5, name=laptop dell, price=42000.00), Product(id=6, name=table, price=12100.00)]}], org.springframework.validation.BindingResult.modelAndView=org.springframework.validation.BeanPropertyBindingResult: 0 errors, products=[Product(id=1, name=laptop, price=670000.00), Product(id=2, name=laptop, price=120000.00), Product(id=3, name=laptop, price=120000.00), Product(id=4, name=laptop, price=120000.00), Product(id=5, name=laptop dell, price=42000.00), Product(id=6, name=table, price=12100.00)]}
+DEBUG | 2024-04-13 21:53:52 | [http-nio-8090-exec-1] view.InternalResourceView (InternalResourceView.java:169) - Forwarding to [/WEB-INF/views/products.jsp]
+ERROR | 2024-04-13 21:53:52 | [http-nio-8090-exec-1] logging.DirectJDKLog (DirectJDKLog.java:175) - Servlet.service() for servlet [jsp] threw exception
+java.lang.ClassNotFoundException: javax.servlet.jsp.tagext.TagLibraryValidator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[?:?]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadFromParent(TomcatEmbeddedWebappClassLoader.java:113) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.doLoadClass(TomcatEmbeddedWebappClassLoader.java:86) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadClass(TomcatEmbeddedWebappClassLoader.java:70) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.createValidator(TagLibraryInfoImpl.java:355) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.<init>(TagLibraryInfoImpl.java:195) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseTaglibDirective(Parser.java:429) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:487) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1444) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:138) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+DEBUG | 2024-04-13 21:53:52 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:1435) - Error rendering view [org.springframework.web.servlet.view.InternalResourceView: name 'products'; URL [/WEB-INF/views/products.jsp]]
+jakarta.servlet.ServletException: java.lang.NoClassDefFoundError: javax/servlet/jsp/tagext/TagLibraryValidator
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:333) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.lang.NoClassDefFoundError: javax/servlet/jsp/tagext/TagLibraryValidator
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[?:?]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadFromParent(TomcatEmbeddedWebappClassLoader.java:113) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.doLoadClass(TomcatEmbeddedWebappClassLoader.java:86) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadClass(TomcatEmbeddedWebappClassLoader.java:70) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.createValidator(TagLibraryInfoImpl.java:355) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.<init>(TagLibraryInfoImpl.java:195) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseTaglibDirective(Parser.java:429) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:487) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1444) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:138) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	... 63 more
+Caused by: java.lang.ClassNotFoundException: javax.servlet.jsp.tagext.TagLibraryValidator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[?:?]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadFromParent(TomcatEmbeddedWebappClassLoader.java:113) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.doLoadClass(TomcatEmbeddedWebappClassLoader.java:86) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadClass(TomcatEmbeddedWebappClassLoader.java:70) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.createValidator(TagLibraryInfoImpl.java:355) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.<init>(TagLibraryInfoImpl.java:195) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseTaglibDirective(Parser.java:429) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:487) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1444) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:138) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	... 63 more
+DEBUG | 2024-04-13 21:53:52 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:1109) - Failed to complete request: jakarta.servlet.ServletException: java.lang.NoClassDefFoundError: javax/servlet/jsp/tagext/TagLibraryValidator
+ERROR | 2024-04-13 21:53:52 | [http-nio-8090-exec-1] logging.DirectJDKLog (DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/productapp] threw exception [java.lang.NoClassDefFoundError: javax/servlet/jsp/tagext/TagLibraryValidator] with root cause
+java.lang.ClassNotFoundException: javax.servlet.jsp.tagext.TagLibraryValidator
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681) ~[?:?]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[?:?]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadFromParent(TomcatEmbeddedWebappClassLoader.java:113) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.doLoadClass(TomcatEmbeddedWebappClassLoader.java:86) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadClass(TomcatEmbeddedWebappClassLoader.java:70) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.createValidator(TagLibraryInfoImpl.java:355) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.<init>(TagLibraryInfoImpl.java:195) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseTaglibDirective(Parser.java:429) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:487) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1444) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:138) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:245) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:106) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:211) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328) ~[tomcat-embed-jasper-10.1.19.jar:10.1.19]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+DEBUG | 2024-04-13 21:53:52 | [http-nio-8090-exec-1] log.LogFormatUtils (LogFormatUtils.java:120) - "ERROR" dispatch for GET "/productapp/error", parameters={}
+DEBUG | 2024-04-13 21:53:52 | [http-nio-8090-exec-1] handler.AbstractHandlerMapping (AbstractHandlerMapping.java:531) - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+DEBUG | 2024-04-13 21:53:52 | [http-nio-8090-exec-1] view.ContentNegotiatingViewResolver (ContentNegotiatingViewResolver.java:354) - Selected 'text/html' given [text/html, text/html;q=0.8]
+DEBUG | 2024-04-13 21:53:52 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:1135) - Exiting from "ERROR" dispatch, status 500
+INFO  | 2024-04-13 21:53:55 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:54:00 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:54:05 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:54:10 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:54:15 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:54:20 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:54:25 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:54:30 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:54:35 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:54:40 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:54:45 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:54:50 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:54:55 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:55:00 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:55:05 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:55:10 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:55:15 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:55:20 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:55:25 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:55:30 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:55:35 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:55:40 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:55:45 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:55:50 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:55:55 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:56:00 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:56:05 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:56:10 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:56:15 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:56:20 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:56:25 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:56:30 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:56:35 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:56:40 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:56:45 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:56:50 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:56:55 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:57:00 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:57:05 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:57:10 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:57:15 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:57:20 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:57:25 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:57:30 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:57:35 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:57:40 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:57:45 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:57:50 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:57:55 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:58:00 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:58:05 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:58:10 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:58:15 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:58:20 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:58:25 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:58:30 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:58:35 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:58:40 | [scheduling-1] aspects.LoggingAspect (LoggingAspect.java:19) - add product method is called evictAll
+INFO  | 2024-04-13 21:58:40 | [SpringApplicationShutdownHook] jpa.AbstractEntityManagerFactoryBean (AbstractEntityManagerFactoryBean.java:650) - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  | 2024-04-13 21:58:40 | [SpringApplicationShutdownHook] hikari.HikariDataSource (HikariDataSource.java:350) - HikariPool-1 - Shutdown initiated...
+INFO  | 2024-04-13 21:58:40 | [SpringApplicationShutdownHook] hikari.HikariDataSource (HikariDataSource.java:352) - HikariPool-1 - Shutdown completed.
+INFO  | 2024-04-14 07:43:39 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:50) - Starting Productapp01Application using Java 21.0.2 with PID 20620 (C:\cloud-native-app-march-24-code\module2-boot\springboot_revision_13_14_April_24\productapp-03-redis\target\classes started by busyc in C:\cloud-native-app-march-24-code\module2-boot\springboot_revision_13_14_April_24\productapp-03-redis)
+INFO  | 2024-04-14 07:43:39 | [main] boot.SpringApplication (SpringApplication.java:654) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2024-04-14 07:43:40 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:292) - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  | 2024-04-14 07:43:40 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+INFO  | 2024-04-14 07:43:40 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+INFO  | 2024-04-14 07:43:40 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:292) - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  | 2024-04-14 07:43:40 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+INFO  | 2024-04-14 07:43:40 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+INFO  | 2024-04-14 07:43:41 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:109) - Tomcat initialized with port 8090 (http)
+INFO  | 2024-04-14 07:43:41 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-14 07:43:41 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting service [Tomcat]
+INFO  | 2024-04-14 07:43:41 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/10.1.19]
+INFO  | 2024-04-14 07:43:41 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  | 2024-04-14 07:43:41 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+INFO  | 2024-04-14 07:43:41 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 1882 ms
+WARN  | 2024-04-14 07:43:41 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:632) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productController' defined in file [C:\cloud-native-app-march-24-code\module2-boot\springboot_revision_13_14_April_24\productapp-03-redis\target\classes\com\productapp\controller\ProductController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.productapp.service.ProductService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+INFO  | 2024-04-14 07:43:41 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Stopping service [Tomcat]
+INFO  | 2024-04-14 07:43:42 | [main] logging.ConditionEvaluationReportLogger (ConditionEvaluationReportLogger.java:82) - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+ERROR | 2024-04-14 07:43:42 | [main] diagnostics.LoggingFailureAnalysisReporter (LoggingFailureAnalysisReporter.java:40) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.productapp.controller.ProductController required a bean of type 'com.productapp.service.ProductService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.productapp.service.ProductService' in your configuration.
+
+INFO  | 2024-04-14 07:44:19 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:50) - Starting Productapp01Application using Java 21.0.2 with PID 18392 (C:\cloud-native-app-march-24-code\module2-boot\springboot_revision_13_14_April_24\productapp-03-redis\target\classes started by busyc in C:\cloud-native-app-march-24-code\module2-boot\springboot_revision_13_14_April_24\productapp-03-redis)
+INFO  | 2024-04-14 07:44:19 | [main] boot.SpringApplication (SpringApplication.java:654) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2024-04-14 07:44:20 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:292) - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  | 2024-04-14 07:44:20 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+INFO  | 2024-04-14 07:44:20 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+INFO  | 2024-04-14 07:44:20 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:292) - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  | 2024-04-14 07:44:20 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+INFO  | 2024-04-14 07:44:20 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+INFO  | 2024-04-14 07:44:21 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:109) - Tomcat initialized with port 8090 (http)
+INFO  | 2024-04-14 07:44:21 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-14 07:44:21 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting service [Tomcat]
+INFO  | 2024-04-14 07:44:21 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/10.1.19]
+INFO  | 2024-04-14 07:44:21 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  | 2024-04-14 07:44:21 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+INFO  | 2024-04-14 07:44:21 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 1836 ms
+WARN  | 2024-04-14 07:44:21 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:632) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productRestController' defined in file [C:\cloud-native-app-march-24-code\module2-boot\springboot_revision_13_14_April_24\productapp-03-redis\target\classes\com\productapp\controller\ProductRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.productapp.service.ProductService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+INFO  | 2024-04-14 07:44:21 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Stopping service [Tomcat]
+INFO  | 2024-04-14 07:44:21 | [main] logging.ConditionEvaluationReportLogger (ConditionEvaluationReportLogger.java:82) - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+ERROR | 2024-04-14 07:44:21 | [main] diagnostics.LoggingFailureAnalysisReporter (LoggingFailureAnalysisReporter.java:40) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.productapp.controller.ProductRestController required a bean of type 'com.productapp.service.ProductService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.productapp.service.ProductService' in your configuration.
+
+INFO  | 2024-04-14 07:44:44 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:50) - Starting Productapp01Application using Java 21.0.2 with PID 6592 (C:\cloud-native-app-march-24-code\module2-boot\springboot_revision_13_14_April_24\productapp-03-redis\target\classes started by busyc in C:\cloud-native-app-march-24-code\module2-boot\springboot_revision_13_14_April_24\productapp-03-redis)
+INFO  | 2024-04-14 07:44:45 | [main] boot.SpringApplication (SpringApplication.java:654) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2024-04-14 07:44:45 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:292) - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  | 2024-04-14 07:44:45 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+INFO  | 2024-04-14 07:44:45 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+INFO  | 2024-04-14 07:44:45 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:292) - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  | 2024-04-14 07:44:45 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+INFO  | 2024-04-14 07:44:45 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+INFO  | 2024-04-14 07:44:46 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:109) - Tomcat initialized with port 8090 (http)
+INFO  | 2024-04-14 07:44:46 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-14 07:44:46 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting service [Tomcat]
+INFO  | 2024-04-14 07:44:46 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/10.1.19]
+INFO  | 2024-04-14 07:44:46 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  | 2024-04-14 07:44:46 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+INFO  | 2024-04-14 07:44:46 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 1806 ms
+WARN  | 2024-04-14 07:44:47 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:632) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scheduleJob': Unsatisfied dependency expressed through field 'productService': No qualifying bean of type 'com.productapp.service.ProductService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+INFO  | 2024-04-14 07:44:47 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Stopping service [Tomcat]
+INFO  | 2024-04-14 07:44:47 | [main] logging.ConditionEvaluationReportLogger (ConditionEvaluationReportLogger.java:82) - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+ERROR | 2024-04-14 07:44:47 | [main] diagnostics.LoggingFailureAnalysisReporter (LoggingFailureAnalysisReporter.java:40) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field productService in com.productapp.service.scheduler.ScheduleJob required a bean of type 'com.productapp.service.ProductService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.productapp.service.ProductService' in your configuration.
+
+INFO  | 2024-04-14 07:54:31 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:50) - Starting Productapp01Application using Java 21.0.2 with PID 17752 (C:\cloud-native-app-march-24-code\module2-boot\springboot_revision_13_14_April_24\productapp-03-redis\target\classes started by busyc in C:\cloud-native-app-march-24-code\module2-boot\springboot_revision_13_14_April_24\productapp-03-redis)
+INFO  | 2024-04-14 07:54:31 | [main] boot.SpringApplication (SpringApplication.java:654) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2024-04-14 07:54:32 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:292) - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  | 2024-04-14 07:54:32 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+INFO  | 2024-04-14 07:54:32 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+INFO  | 2024-04-14 07:54:32 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:292) - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  | 2024-04-14 07:54:32 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+INFO  | 2024-04-14 07:54:32 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+INFO  | 2024-04-14 07:54:33 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:109) - Tomcat initialized with port 8090 (http)
+INFO  | 2024-04-14 07:54:33 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-14 07:54:33 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting service [Tomcat]
+INFO  | 2024-04-14 07:54:33 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/10.1.19]
+INFO  | 2024-04-14 07:54:33 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  | 2024-04-14 07:54:33 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+INFO  | 2024-04-14 07:54:33 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 1907 ms
+DEBUG | 2024-04-14 07:54:35 | [main] handler.AbstractHandlerMethodMapping (AbstractHandlerMethodMapping.java:366) - 11 mappings in 'requestMappingHandlerMapping'
+DEBUG | 2024-04-14 07:54:35 | [main] handler.SimpleUrlHandlerMapping (SimpleUrlHandlerMapping.java:187) - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+DEBUG | 2024-04-14 07:54:35 | [main] annotation.RequestMappingHandlerAdapter (RequestMappingHandlerAdapter.java:634) - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+DEBUG | 2024-04-14 07:54:35 | [main] annotation.ExceptionHandlerExceptionResolver (ExceptionHandlerExceptionResolver.java:305) - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+INFO  | 2024-04-14 07:54:36 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-14 07:54:36 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:241) - Tomcat started on port 8090 (http) with context path '/productapp'
+INFO  | 2024-04-14 07:54:36 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:56) - Started Productapp01Application in 5.363 seconds (process running for 6.107)
+INFO  | 2024-04-14 07:55:11 | [http-nio-8090-exec-1] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  | 2024-04-14 07:55:11 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:532) - Initializing Servlet 'dispatcherServlet'
+DEBUG | 2024-04-14 07:55:11 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:533) - Detected StandardServletMultipartResolver
+DEBUG | 2024-04-14 07:55:11 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:557) - Detected AcceptHeaderLocaleResolver
+DEBUG | 2024-04-14 07:55:11 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:583) - Detected FixedThemeResolver
+DEBUG | 2024-04-14 07:55:11 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:733) - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@47162173
+DEBUG | 2024-04-14 07:55:11 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:797) - Detected org.springframework.web.servlet.support.SessionFlashMapManager@10b67f54
+DEBUG | 2024-04-14 07:55:11 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:549) - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+INFO  | 2024-04-14 07:55:11 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:554) - Completed initialization in 6 ms
+DEBUG | 2024-04-14 07:55:11 | [http-nio-8090-exec-1] log.LogFormatUtils (LogFormatUtils.java:120) - GET "/productapp/api/products", parameters={}
+DEBUG | 2024-04-14 07:55:11 | [http-nio-8090-exec-1] handler.AbstractHandlerMapping (AbstractHandlerMapping.java:531) - Mapped to com.productapp.controller.ProductRestController#getAll()
+INFO  | 2024-04-14 07:55:11 | [http-nio-8090-exec-1] service.ProductServiceImpl (ProductServiceImpl.java:37) - database is hit get all is called............
+DEBUG | 2024-04-14 07:55:11 | [http-nio-8090-exec-1] annotation.AbstractMessageConverterMethodProcessor (AbstractMessageConverterMethodProcessor.java:275) - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+DEBUG | 2024-04-14 07:55:11 | [http-nio-8090-exec-1] log.LogFormatUtils (LogFormatUtils.java:120) - Writing [[]]
+DEBUG | 2024-04-14 07:55:11 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:1138) - Completed 200 OK
+DEBUG | 2024-04-14 07:55:33 | [http-nio-8090-exec-3] log.LogFormatUtils (LogFormatUtils.java:120) - POST "/productapp/api/products", parameters={}
+DEBUG | 2024-04-14 07:55:33 | [http-nio-8090-exec-3] handler.AbstractHandlerMapping (AbstractHandlerMapping.java:531) - Mapped to com.productapp.controller.ProductRestController#addProduct(Product)
+DEBUG | 2024-04-14 07:55:33 | [http-nio-8090-exec-3] log.LogFormatUtils (LogFormatUtils.java:120) - Read "application/json;charset=UTF-8" to [Product(id=1, name=table, price=12100.00)]
+DEBUG | 2024-04-14 07:55:33 | [http-nio-8090-exec-3] annotation.ExceptionHandlerExceptionResolver (ExceptionHandlerExceptionResolver.java:420) - Using @ExceptionHandler com.productapp.controller.ExHandlerController#handle500(Exception)
+DEBUG | 2024-04-14 07:55:34 | [http-nio-8090-exec-3] annotation.AbstractMessageConverterMethodProcessor (AbstractMessageConverterMethodProcessor.java:275) - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+DEBUG | 2024-04-14 07:55:34 | [http-nio-8090-exec-3] log.LogFormatUtils (LogFormatUtils.java:120) - Writing [ErrorInfo(message=Cannot serialize, statusCode=500 INTERNAL_SERVER_ERROR, toContact=rgupta.mtech@gma (truncated)...]
+DEBUG | 2024-04-14 07:55:34 | [http-nio-8090-exec-3] handler.AbstractHandlerExceptionResolver (AbstractHandlerExceptionResolver.java:179) - Resolved [org.springframework.data.redis.serializer.SerializationException: Cannot serialize]
+DEBUG | 2024-04-14 07:55:34 | [http-nio-8090-exec-3] servlet.FrameworkServlet (FrameworkServlet.java:1138) - Completed 500 INTERNAL_SERVER_ERROR
+INFO  | 2024-04-14 07:55:57 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:50) - Starting Productapp01Application using Java 21.0.2 with PID 2756 (C:\cloud-native-app-march-24-code\module2-boot\springboot_revision_13_14_April_24\productapp-03-redis\target\classes started by busyc in C:\cloud-native-app-march-24-code\module2-boot\springboot_revision_13_14_April_24\productapp-03-redis)
+INFO  | 2024-04-14 07:55:57 | [main] boot.SpringApplication (SpringApplication.java:654) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2024-04-14 07:55:58 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:292) - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  | 2024-04-14 07:55:58 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+INFO  | 2024-04-14 07:55:58 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+INFO  | 2024-04-14 07:55:58 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:292) - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  | 2024-04-14 07:55:58 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+INFO  | 2024-04-14 07:55:58 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+INFO  | 2024-04-14 07:55:59 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:109) - Tomcat initialized with port 8090 (http)
+INFO  | 2024-04-14 07:55:59 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-14 07:55:59 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting service [Tomcat]
+INFO  | 2024-04-14 07:55:59 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/10.1.19]
+INFO  | 2024-04-14 07:55:59 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  | 2024-04-14 07:55:59 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+INFO  | 2024-04-14 07:55:59 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 1829 ms
+DEBUG | 2024-04-14 07:56:00 | [main] handler.AbstractHandlerMethodMapping (AbstractHandlerMethodMapping.java:366) - 11 mappings in 'requestMappingHandlerMapping'
+DEBUG | 2024-04-14 07:56:01 | [main] handler.SimpleUrlHandlerMapping (SimpleUrlHandlerMapping.java:187) - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+DEBUG | 2024-04-14 07:56:01 | [main] annotation.RequestMappingHandlerAdapter (RequestMappingHandlerAdapter.java:634) - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+DEBUG | 2024-04-14 07:56:01 | [main] annotation.ExceptionHandlerExceptionResolver (ExceptionHandlerExceptionResolver.java:305) - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+INFO  | 2024-04-14 07:56:02 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-14 07:56:02 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:241) - Tomcat started on port 8090 (http) with context path '/productapp'
+INFO  | 2024-04-14 07:56:02 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:56) - Started Productapp01Application in 5.201 seconds (process running for 5.915)
+INFO  | 2024-04-14 07:56:06 | [http-nio-8090-exec-1] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  | 2024-04-14 07:56:06 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:532) - Initializing Servlet 'dispatcherServlet'
+DEBUG | 2024-04-14 07:56:06 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:533) - Detected StandardServletMultipartResolver
+DEBUG | 2024-04-14 07:56:06 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:557) - Detected AcceptHeaderLocaleResolver
+DEBUG | 2024-04-14 07:56:06 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:583) - Detected FixedThemeResolver
+DEBUG | 2024-04-14 07:56:06 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:733) - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6cee903a
+DEBUG | 2024-04-14 07:56:06 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:797) - Detected org.springframework.web.servlet.support.SessionFlashMapManager@194b9783
+DEBUG | 2024-04-14 07:56:06 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:549) - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+INFO  | 2024-04-14 07:56:06 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:554) - Completed initialization in 2 ms
+DEBUG | 2024-04-14 07:56:06 | [http-nio-8090-exec-1] log.LogFormatUtils (LogFormatUtils.java:120) - POST "/productapp/api/products", parameters={}
+DEBUG | 2024-04-14 07:56:06 | [http-nio-8090-exec-1] handler.AbstractHandlerMapping (AbstractHandlerMapping.java:531) - Mapped to com.productapp.controller.ProductRestController#addProduct(Product)
+DEBUG | 2024-04-14 07:56:06 | [http-nio-8090-exec-1] log.LogFormatUtils (LogFormatUtils.java:120) - Read "application/json;charset=UTF-8" to [Product(id=1, name=table, price=12100.00)]
+DEBUG | 2024-04-14 07:56:06 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:1109) - Failed to complete request: org.springframework.data.redis.serializer.SerializationException: Cannot serialize
+ERROR | 2024-04-14 07:56:06 | [http-nio-8090-exec-1] logging.DirectJDKLog (DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/productapp] threw exception [Request processing failed: org.springframework.data.redis.serializer.SerializationException: Cannot serialize] with root cause
+java.lang.IllegalArgumentException: DefaultSerializer requires a Serializable payload but received an object of type [com.productapp.dao.Product]
+	at org.springframework.core.serializer.DefaultSerializer.serialize(DefaultSerializer.java:43) ~[spring-core-6.1.5.jar:6.1.5]
+	at org.springframework.core.serializer.Serializer.serializeToByteArray(Serializer.java:56) ~[spring-core-6.1.5.jar:6.1.5]
+	at org.springframework.core.serializer.support.SerializingConverter.convert(SerializingConverter.java:60) ~[spring-core-6.1.5.jar:6.1.5]
+	at org.springframework.core.serializer.support.SerializingConverter.convert(SerializingConverter.java:33) ~[spring-core-6.1.5.jar:6.1.5]
+	at org.springframework.data.redis.serializer.JdkSerializationRedisSerializer.serialize(JdkSerializationRedisSerializer.java:92) ~[spring-data-redis-3.2.4.jar:3.2.4]
+	at org.springframework.data.redis.core.AbstractOperations.rawHashValue(AbstractOperations.java:186) ~[spring-data-redis-3.2.4.jar:3.2.4]
+	at org.springframework.data.redis.core.DefaultHashOperations.put(DefaultHashOperations.java:195) ~[spring-data-redis-3.2.4.jar:3.2.4]
+	at com.productapp.dao.ProductDaoImpl.addProduct(ProductDaoImpl.java:21) ~[classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.5.jar:6.1.5]
+	at com.productapp.dao.ProductDaoImpl$$SpringCGLIB$$0.addProduct(<generated>) ~[classes/:?]
+	at com.productapp.service.ProductServiceImpl.addProduct(ProductServiceImpl.java:32) ~[classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:64) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:416) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cache.interceptor.CacheAspectSupport.evaluate(CacheAspectSupport.java:545) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:433) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:395) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:74) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.5.jar:6.1.5]
+	at com.productapp.service.ProductServiceImpl$$SpringCGLIB$$0.addProduct(<generated>) ~[classes/:?]
+	at com.productapp.controller.ProductRestController.addProduct(ProductRestController.java:47) ~[classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:925) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+DEBUG | 2024-04-14 07:56:06 | [http-nio-8090-exec-1] log.LogFormatUtils (LogFormatUtils.java:120) - "ERROR" dispatch for POST "/productapp/error", parameters={}
+DEBUG | 2024-04-14 07:56:06 | [http-nio-8090-exec-1] handler.AbstractHandlerMapping (AbstractHandlerMapping.java:531) - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+DEBUG | 2024-04-14 07:56:06 | [http-nio-8090-exec-1] annotation.AbstractMessageConverterMethodProcessor (AbstractMessageConverterMethodProcessor.java:275) - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+DEBUG | 2024-04-14 07:56:06 | [http-nio-8090-exec-1] log.LogFormatUtils (LogFormatUtils.java:120) - Writing [{timestamp=Sun Apr 14 07:56:06 IST 2024, status=500, error=Internal Server Error, path=/productapp/a (truncated)...]
+DEBUG | 2024-04-14 07:56:06 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:1135) - Exiting from "ERROR" dispatch, status 500
+INFO  | 2024-04-14 07:56:32 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:50) - Starting Productapp01Application using Java 21.0.2 with PID 11776 (C:\cloud-native-app-march-24-code\module2-boot\springboot_revision_13_14_April_24\productapp-03-redis\target\classes started by busyc in C:\cloud-native-app-march-24-code\module2-boot\springboot_revision_13_14_April_24\productapp-03-redis)
+INFO  | 2024-04-14 07:56:32 | [main] boot.SpringApplication (SpringApplication.java:654) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2024-04-14 07:56:32 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:292) - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  | 2024-04-14 07:56:32 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+INFO  | 2024-04-14 07:56:32 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+INFO  | 2024-04-14 07:56:33 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:292) - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  | 2024-04-14 07:56:33 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:139) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+INFO  | 2024-04-14 07:56:33 | [main] config.RepositoryConfigurationDelegate (RepositoryConfigurationDelegate.java:208) - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+INFO  | 2024-04-14 07:56:33 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:109) - Tomcat initialized with port 8090 (http)
+INFO  | 2024-04-14 07:56:33 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-14 07:56:33 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting service [Tomcat]
+INFO  | 2024-04-14 07:56:33 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/10.1.19]
+INFO  | 2024-04-14 07:56:34 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  | 2024-04-14 07:56:34 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+INFO  | 2024-04-14 07:56:34 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:296) - Root WebApplicationContext: initialization completed in 1896 ms
+DEBUG | 2024-04-14 07:56:35 | [main] handler.AbstractHandlerMethodMapping (AbstractHandlerMethodMapping.java:366) - 11 mappings in 'requestMappingHandlerMapping'
+DEBUG | 2024-04-14 07:56:35 | [main] handler.SimpleUrlHandlerMapping (SimpleUrlHandlerMapping.java:187) - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+DEBUG | 2024-04-14 07:56:35 | [main] annotation.RequestMappingHandlerAdapter (RequestMappingHandlerAdapter.java:634) - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+DEBUG | 2024-04-14 07:56:36 | [main] annotation.ExceptionHandlerExceptionResolver (ExceptionHandlerExceptionResolver.java:305) - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+INFO  | 2024-04-14 07:56:36 | [main] logging.DirectJDKLog (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8090"]
+INFO  | 2024-04-14 07:56:36 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:241) - Tomcat started on port 8090 (http) with context path '/productapp'
+INFO  | 2024-04-14 07:56:36 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:56) - Started Productapp01Application in 5.361 seconds (process running for 6.089)
+INFO  | 2024-04-14 07:56:40 | [http-nio-8090-exec-1] logging.DirectJDKLog (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  | 2024-04-14 07:56:40 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:532) - Initializing Servlet 'dispatcherServlet'
+DEBUG | 2024-04-14 07:56:40 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:533) - Detected StandardServletMultipartResolver
+DEBUG | 2024-04-14 07:56:40 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:557) - Detected AcceptHeaderLocaleResolver
+DEBUG | 2024-04-14 07:56:40 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:583) - Detected FixedThemeResolver
+DEBUG | 2024-04-14 07:56:40 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:733) - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@760a2b6e
+DEBUG | 2024-04-14 07:56:40 | [http-nio-8090-exec-1] servlet.DispatcherServlet (DispatcherServlet.java:797) - Detected org.springframework.web.servlet.support.SessionFlashMapManager@15186ce0
+DEBUG | 2024-04-14 07:56:40 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:549) - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+INFO  | 2024-04-14 07:56:40 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:554) - Completed initialization in 2 ms
+DEBUG | 2024-04-14 07:56:40 | [http-nio-8090-exec-1] log.LogFormatUtils (LogFormatUtils.java:120) - POST "/productapp/api/products", parameters={}
+DEBUG | 2024-04-14 07:56:40 | [http-nio-8090-exec-1] handler.AbstractHandlerMapping (AbstractHandlerMapping.java:531) - Mapped to com.productapp.controller.ProductRestController#addProduct(Product)
+DEBUG | 2024-04-14 07:56:40 | [http-nio-8090-exec-1] log.LogFormatUtils (LogFormatUtils.java:120) - Read "application/json;charset=UTF-8" to [Product(id=1, name=table, price=12100.00)]
+DEBUG | 2024-04-14 07:56:40 | [http-nio-8090-exec-1] annotation.AbstractMessageConverterMethodProcessor (AbstractMessageConverterMethodProcessor.java:275) - Using 'application/json', given [application/json] and supported [text/plain, */*, application/json, application/*+json]
+DEBUG | 2024-04-14 07:56:40 | [http-nio-8090-exec-1] log.LogFormatUtils (LogFormatUtils.java:120) - Writing ["product added successfully"]
+DEBUG | 2024-04-14 07:56:40 | [http-nio-8090-exec-1] servlet.FrameworkServlet (FrameworkServlet.java:1138) - Completed 200 OK
+DEBUG | 2024-04-14 07:56:48 | [http-nio-8090-exec-3] log.LogFormatUtils (LogFormatUtils.java:120) - GET "/productapp/api/products", parameters={}
+DEBUG | 2024-04-14 07:56:48 | [http-nio-8090-exec-3] handler.AbstractHandlerMapping (AbstractHandlerMapping.java:531) - Mapped to com.productapp.controller.ProductRestController#getAll()
+INFO  | 2024-04-14 07:56:48 | [http-nio-8090-exec-3] service.ProductServiceImpl (ProductServiceImpl.java:37) - database is hit get all is called............
+DEBUG | 2024-04-14 07:56:48 | [http-nio-8090-exec-3] annotation.AbstractMessageConverterMethodProcessor (AbstractMessageConverterMethodProcessor.java:275) - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+DEBUG | 2024-04-14 07:56:48 | [http-nio-8090-exec-3] log.LogFormatUtils (LogFormatUtils.java:120) - Writing [[Product(id=1, name=table, price=12100.00)]]
+DEBUG | 2024-04-14 07:56:48 | [http-nio-8090-exec-3] servlet.FrameworkServlet (FrameworkServlet.java:1138) - Completed 200 OK
+DEBUG | 2024-04-14 08:26:29 | [http-nio-8090-exec-5] log.LogFormatUtils (LogFormatUtils.java:120) - GET "/productapp/api/products", parameters={}
+DEBUG | 2024-04-14 08:26:29 | [http-nio-8090-exec-5] handler.AbstractHandlerMapping (AbstractHandlerMapping.java:531) - Mapped to com.productapp.controller.ProductRestController#getAll()
+INFO  | 2024-04-14 08:26:29 | [http-nio-8090-exec-5] service.ProductServiceImpl (ProductServiceImpl.java:37) - database is hit get all is called............
+DEBUG | 2024-04-14 08:26:29 | [http-nio-8090-exec-5] annotation.AbstractMessageConverterMethodProcessor (AbstractMessageConverterMethodProcessor.java:275) - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+DEBUG | 2024-04-14 08:26:29 | [http-nio-8090-exec-5] log.LogFormatUtils (LogFormatUtils.java:120) - Writing [[Product(id=1, name=table, price=12100.00)]]
+DEBUG | 2024-04-14 08:26:29 | [http-nio-8090-exec-5] servlet.FrameworkServlet (FrameworkServlet.java:1138) - Completed 200 OK

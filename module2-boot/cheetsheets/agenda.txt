@@ -1,0 +1,29 @@
+Agenda :
+Spring boot actuator, HATEOAS 
+Spring data, Quaries, Pagination
+Spring boot mongodb
+Spring boot joins examples, mini projects
+
+RDBMS 			Mongodb
+table --------------collection
+column				key
+records/rows		Documents
+
+Spring boot redis
+Spring boot bankapplication
+
+Blogpost application
+
+BlogPost			Comments
+1					Many
+http://localhost:8090/blogs/1/comments/1
+Spring testing
+Spring sec
+spring messaging
+------------------
+
+linux commands
+docker
+k8s
+microserice
+
