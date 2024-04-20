@@ -1,29 +1,37 @@
 Agenda :
-Spring boot actuator, HATEOAS 
-Spring data, Quaries, Pagination
-Spring boot mongodb
-Spring boot joins examples, mini projects
-
-RDBMS 			Mongodb
-table --------------collection
-column				key
-records/rows		Documents
-
-Spring boot redis
-Spring boot bankapplication
-
-Blogpost application
-
-BlogPost			Comments
-1					Many
-http://localhost:8090/blogs/1/comments/1
-Spring testing
-Spring sec
+Spring boot communication bw microservice
+ 1. Synchronous communication
+ 2. Asyn communication
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Spring boot rabbitmq imports
+------------------------------
+import org.springframework.amqp.core.*;
+import org.springframework.amqp.rabbit.connection.ConnectionFactory;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
+import org.springframework.amqp.support.converter.MessageConverter;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+ 
+ 
+ 
+ 
+ 
+ 
 spring messaging
 ------------------
-
 linux commands
 docker
 k8s
+local setup vs cloud provider setup
+local setup: kind cluster
 microserice
 
