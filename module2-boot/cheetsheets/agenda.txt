@@ -3,6 +3,66 @@ Spring boot communication bw microservice
  1. Synchronous communication
  2. Asyn communication
  
+sb1 ------------------------- sb2
+ communicate each to each other
+ 2 type of communication
+ 
+ 1. Synchronous communication
+	client ---------------- server
+	
+	1. RestTemplate (aka template dp)
+	2. OpenFeign (declative way of intercting bw the ms)
+	3. reactive stream webclient*
+	4. spring boot 3: HttpClient it support rective also
+	
+	
+	
+		
+ 2. Asyn communication
+   client ---------------- server
+   JMS (J2EE) --> it works with java servers only
+   AMQP(Adv messaging Queing protocol)
+	RabbitMQ, activeMQ
+   https://www.rfwireless-world.com/Terminology/AMQP-vs-JMS.html
+   
+    Kafka
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    @GetMapping
+    public ResponseEntity<List<ProductDto>> getAll();
+
+    @GetMapping(path = "{id}")
+    public ResponseEntity<ProductDto> getById(@PathVariable int id);
+   
+    @PostMapping
+    public ResponseEntity<ProductDto> addProduct(@Valid @RequestBody ProductDto productDto);
+	
+    
+    @PutMapping(path = "{id}")
+    public ResponseEntity<ProductDto> updateProduct(@PathVariable int id,  @RequestBody ProductDto productDto);
+    
+  
+    @DeleteMapping(path = "products/{id}")
+    public ResponseEntity<Void> deleteById(@PathVariable int id);
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
@@ -26,12 +86,142 @@ import org.springframework.context.annotation.Configuration;
  
  
  
-spring messaging
-------------------
+ 
+ 
+ 
+ 
+Kafka installation:
+------------------------
+kafka cluster contains many brokers and brokers is managed by zookeeper
+
+
+note:
+change configuration files:
+
+server.properties
+log.dirs=c:/kafka/kafka-logs
+
+zookeeper.properties
+dataDir=c:/kafka/zookeeper
+
+
+
+1. Start Zookeeper(port 2181)
+____________________________
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+
+
+2. Start Kafka Broker (9090)
+____________________________
+
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+3. Create topic
+____________
+
+.\kafka-topics.bat --bootstrap-server localhost:9092 --create --topic t-hello2 --partitions 3 --replication-factor 1
+
+List topic
+
+.\kafka-topics.bat --bootstrap-server localhost:9092 --list
+
+describe topic
+.\kafka-topics.bat --bootstrap-server localhost:9092 --describe --topic  t-hello2
+
+4. Start Producer
+__________________
+.\kafka-console-producer.bat --broker-list localhost:9092 --topic  t-hello2
+
+
+
+Send message
+How are you
+
+5> Receive message
+________________
+.\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic  t-hello2 --from-beginning
+How are you
+
+
+producer config:
+---------------
+server:
+  port: 8080
+spring:
+  kafka:
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      bootstrap-servers: localhost:9092
+	  
+	  
+
+
+
+
+Kafka consumer config:
+--------------------
+server:
+  port: 8081
+spring:
+  kafka:
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: "*"
+
+
+
+
+
+
+
+Note: all configuration can be done using java configuration inside a configuration class
+
+   @Bean
+    public Map<String,Object> producerConfig(){
+        Map<String,Object> props=new HashMap<>();
+        props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,
+                "localhost:9092");
+        props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG,
+                StringSerializer.class);
+        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,
+                JsonSerializer.class);
+        return props;
+    }
+
+    @Bean
+    public ProducerFactory<String,Object> producerFactory(){
+        return new DefaultKafkaProducerFactory<>(producerConfig());
+    }
+
+    @Bean
+    public KafkaTemplate<String,Object> kafkaTemplate(){
+        return new KafkaTemplate<>(producerFactory());
+    }
+ 
+cloud native app with spring boot:
+----------------------------------
+Module 1: spring core
+---------------------
+spring core
+
+Module 2: spring boot
+-----------------
+Security
+
+Module 3:
 linux commands
 docker
 k8s
 local setup vs cloud provider setup
 local setup: kind cluster
+
+Module 4: 
 microserice
 

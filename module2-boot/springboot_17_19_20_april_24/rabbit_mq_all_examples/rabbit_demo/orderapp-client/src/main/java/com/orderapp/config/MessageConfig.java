@@ -19,7 +19,7 @@ public class MessageConfig {
 
     @Bean
     public Queue queue(){
-        return new Queue(ORDERAPP_QUEUE);
+        return new Queue(ORDERAPP_QUEUE, true);
     }
     @Bean
     public TopicExchange topicExchange(){
@@ -27,8 +27,8 @@ public class MessageConfig {
     }
     //bind both
     @Bean
-    public Binding binding(Queue queue, TopicExchange topicExchange){
-        return BindingBuilder.bind(queue).to(topicExchange).with(ORDERAPP_ROUTINGKEY);
+    public Binding binding(){
+        return BindingBuilder.bind(queue()).to(topicExchange()).with(ORDERAPP_ROUTINGKEY);
     }
     @Bean
     public  MessageConverter messageConverter(){
@@ -41,6 +41,7 @@ public class MessageConfig {
         rabbitTemplate.setMessageConverter(messageConverter());
         return rabbitTemplate;
     }
+
 }
 
 

@@ -7,9 +7,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
-@FeignClient(name = "productProxyClient", url = "http://localhost:8080/products")
-public interface ProductProxyClient {
+@FeignClient(name = "productServiceProxy", url = "http://localhost:8080/products")
+public interface ProductServiceProxy {
     @GetMapping
     public ResponseEntity<List<ProductDto>> getAll();
 
@@ -19,8 +18,10 @@ public interface ProductProxyClient {
     @PostMapping
     public ResponseEntity<ProductDto> addProduct(@Valid @RequestBody ProductDto productDto);
 
+
     @PutMapping(path = "{id}")
     public ResponseEntity<ProductDto> updateProduct(@PathVariable int id,  @RequestBody ProductDto productDto);
+
 
     @DeleteMapping(path = "{id}")
     public ResponseEntity<Void> deleteById(@PathVariable int id);

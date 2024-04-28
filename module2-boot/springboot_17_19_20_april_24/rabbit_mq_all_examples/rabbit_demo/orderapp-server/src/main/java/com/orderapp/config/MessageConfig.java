@@ -17,16 +17,20 @@ public class MessageConfig {
 
     @Bean
     public Queue queue(){
-        return new Queue(ORDERAPP_QUEUE);
+        return new Queue(ORDERAPP_QUEUE, true);
     }
     @Bean
     public TopicExchange topicExchange(){
         return new TopicExchange(ORDERAPP_EXCHANGE);
     }
     //bind both
+//    @Bean
+//    public Binding binding(Queue queue, TopicExchange topicExchange){
+//        return BindingBuilder.bind(queue).to(topicExchange).with(ORDERAPP_ROUTINGKEY);
+//    }
     @Bean
-    public Binding binding(Queue queue, TopicExchange topicExchange){
-        return BindingBuilder.bind(queue).to(topicExchange).with(ORDERAPP_ROUTINGKEY);
+    public Binding binding(){
+        return BindingBuilder.bind(queue()).to(topicExchange()).with(ORDERAPP_ROUTINGKEY);
     }
     @Bean
     public  MessageConverter messageConverter(){
@@ -39,6 +43,37 @@ public class MessageConfig {
         rabbitTemplate.setMessageConverter(messageConverter());
         return rabbitTemplate;
     }
+//    public static final String ORDERAPP_QUEUE = "orderapp_queue";
+//    public static final String ORDERAPP_EXCHANGE = "orderapp_exhange";
+//    public static final String ORDERAPP_ROUTINGKEY = "orderapp_routingkey";
+//
+//    //Queue
+//    @Bean
+//    public Queue queue(){
+//        return new Queue(ORDERAPP_QUEUE);
+//    }
+//    //topicEx
+//    @Bean
+//    public TopicExchange topicExchange(){
+//        return new TopicExchange(ORDERAPP_EXCHANGE);
+//    }
+//    //binding
+//    public Binding binding(){
+//        return BindingBuilder.bind(queue()).to(topicExchange()).with(ORDERAPP_ROUTINGKEY);
+//    }
+//    //message converter
+//    @Bean
+//    public MessageConverter messageConverter(){
+//        return new Jackson2JsonMessageConverter();
+//    }
+//    //RabbitMqTemple
+//    @Bean
+//    public RabbitTemplate rabbitTemplate(ConnectionFactory connectionFactory){
+//        RabbitTemplate template=new RabbitTemplate(connectionFactory);
+//        template.setMessageConverter(messageConverter());
+//        return template;
+//    }
+
 }
 
 

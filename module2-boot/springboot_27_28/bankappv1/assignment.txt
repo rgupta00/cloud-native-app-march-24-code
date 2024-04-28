@@ -1,0 +1,41 @@
+1. validation
+2. ex handing
+3. documentation
+
+
+
+
+ValidationMessages.properties
+---------------------------------
+
+account.email.absent=Please provide email address
+account.email.invalid=Please provide valid email address
+
+account.name.absent=Please provide customer name
+account.name.invalid=Name should contain only alphabets and space
+
+account.phone.absent=Please provide phone
+account.phone.invalid=Please provide correct phone number of 10 digits
+
+account.balance.absent=Please provide initial balance
+account.balance.invalid=Please provide correct initial balance bw 100 to 100000
+
+
+
+	private int id;
+
+	@NotNull(message = "{account.name.absent}")
+	@Pattern(regexp = "[A-Za-z]+( [A-Za-z]+)*", message = "{account.name.invalid}")
+	private String name;
+
+	@NotNull(message = "{account.balance.absent}")
+	@Range(min = 100, max = 100000, message = "{account.balance.invalid}")
+	private BigDecimal balance;
+
+	@Email(message = "{account.email.invalid}")
+	@NotNull(message = "{account.email.absent}")
+	private String email;
+
+	@NotNull(message = "{account.phone.absent}")
+	@Pattern(regexp = "[789][0-9]{9}", message = "{account.phone.invalid}")
+	private String phone;
