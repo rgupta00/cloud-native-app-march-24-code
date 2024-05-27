@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: empapp
+  annotations:
+    kubernetes.io/change-cause: "deploying v1"
+spec:
+  minReadySeconds: 10
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: "100%"
+  selector:
+    matchLabels:
+      app: empapp
+  replicas: 3
+  template:
+      metadata:
+        labels:
+          app: empapp
+      spec:
+        containers:
+          - name: empapp
+            image: rgupta00/empapp:1.1
+            resources:
+              limits:
+                memory: "128Mi"
+                cpu: "500m"
+            ports:
+              - containerPort: 8080

@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: empapp
+spec:
+  selector:
+    matchLabels:
+      app: empapp-demo
+  replicas: 3
+  template:
+      metadata:
+        name: empapp
+        labels:
+          app: empapp
+      spec:
+        containers:
+          - name: empapp
+            image: rgupta00/empapp:1.1
+            resources:
+              limits:
+                memory: "128Mi"
+                cpu: "500m"
+            ports:
+              - containerPort: 8080
+
+

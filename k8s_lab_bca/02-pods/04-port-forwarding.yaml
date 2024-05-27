@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: empapp
+  labels:
+    name: empapp
+spec:
+  containers:
+    - name: empapp
+      image: rgupta00/empapp:1.1
+      resources:
+       limits:
+         memory: "128Mi"
+         cpu: "500m"
+      ports:
+        - containerPort: 8080

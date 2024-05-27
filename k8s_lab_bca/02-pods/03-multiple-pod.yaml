@@ -1,0 +1,54 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod-1
+  labels:
+    dept: dept-1
+    team: team-1
+spec:
+  containers:
+    - name: mypod
+      image: nginx
+      resources:
+       limits:
+         memory: "128Mi"
+         cpu: "500m"
+      ports:
+        - containerPort: 80
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod-2
+  labels:
+    dept: dept-1
+    team: team-2
+spec:
+  containers:
+    - name: mypod
+      image: nginx
+      resources:
+       limits:
+         memory: "128Mi"
+         cpu: "500m"
+      ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod-3
+  labels:
+    dept: dept-2
+    team: team-1
+spec:
+  containers:
+    - name: mypod
+      image: nginx
+      resources:
+       limits:
+         memory: "128Mi"
+         cpu: "500m"
+      ports:
+        - containerPort: 80
