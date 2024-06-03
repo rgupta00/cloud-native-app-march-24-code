@@ -20,13 +20,15 @@ spec:
             path: /
             port: 80
           periodSeconds: 1
-          failureThreshold: 30  
+          failureThreshold: 30 
+          timeoutSeconds: 10
         readinessProbe:
           httpGet:
             path: /
             port: 80
           periodSeconds: 5
-          failureThreshold: 3                
+          failureThreshold: 3
+          timeoutSeconds: 10            
         resources:
           requests:
             cpu: 50m
@@ -54,7 +56,7 @@ spec:
   terminationGracePeriodSeconds: 1
   containers:
   - name: demo
-    image: vinsdocker/util
+    image: rgupta00/util
     args:
     - "sleep"
     - "3600"

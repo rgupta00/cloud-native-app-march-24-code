@@ -7,7 +7,7 @@ data:
     appUrl=http://my-app-service
     timeout=30
     a.b.c.d=something
-    username=vinoth
+    username=raj
 ---
 apiVersion: v1
 kind: Pod
@@ -19,6 +19,10 @@ spec:
   containers:
   - name: ubuntu
     image: ubuntu
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
     volumeMounts:
     - name: config-volume
       mountPath: /usr/share/props  

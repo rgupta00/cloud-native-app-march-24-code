@@ -19,25 +19,25 @@ spec:
       containers:
       - name:  empapp-service
         image: rgupta00/empapp:1.1
-      resources:
-      limits:
-        memory: "128Mi"
-        cpu: "500m"
-        startupProbe:
-          httpGet:
-            path: /
-            port: 8080
-          periodSeconds: 1
-          failureThreshold: 3
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        # startupProbe:
+        #   httpGet:
+        #     path: /
+        #     port: 8080
+        #   periodSeconds: 1
+        #   failureThreshold: 3
         livenessProbe:
           httpGet:
-            path: /
+            path: /actuator/health/liveness
             port: 8080
           periodSeconds: 1
           failureThreshold: 3
         readinessProbe:
           httpGet:
-            path: /
+            path: /actuator/health/liveness
             port: 8080
           periodSeconds: 1
           failureThreshold: 3

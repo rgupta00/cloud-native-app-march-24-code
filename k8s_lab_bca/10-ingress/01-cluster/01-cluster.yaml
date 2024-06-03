@@ -20,7 +20,7 @@ nodes:
     hostPort: 443
     protocol: TCP
 - role: worker
-- role: worker    
+- role: worker
 
 # kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/kind/deploy.yaml
 

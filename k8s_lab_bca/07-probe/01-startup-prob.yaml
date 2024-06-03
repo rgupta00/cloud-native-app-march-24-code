@@ -18,12 +18,25 @@ spec:
       containers:
       - name:  empapp-service
         image: rgupta00/empapp:1.1
-        startupProbe:
-          httpGet:
-            path: /
-            port: 8080
-          periodSeconds: 1
-          failureThreshold: 3
+        # imagePullPolicy: Always
+        resources:
+          limits:
+            memory: "1Gi"
+            cpu: "500m"
+        readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: healthcheck
+            initialDelaySeconds: 10
+            periodSeconds: 1
+            failureThreshold: 3
+        livenessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: healthcheck
+            initialDelaySeconds: 60
+            periodSeconds: 1
+            failureThreshold: 3
         ports:
-        - name: "app-port"
-          containerPort: 8080
+            - name: healthcheck
+              containerPort: 8080
