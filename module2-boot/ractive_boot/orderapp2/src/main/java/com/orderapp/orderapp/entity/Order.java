@@ -9,12 +9,11 @@ import org.springframework.data.relational.core.mapping.Table;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-
 @Table("orders_table")
 public class Order {
 
     @Id
-    private Long id;
+    private int id;
     private Double amount;
 
 }

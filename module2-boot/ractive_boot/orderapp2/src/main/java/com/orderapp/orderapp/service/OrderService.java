@@ -18,13 +18,13 @@ public class OrderService {
         return orderRepo.findAll();
     }
 
-    public Mono<Order> getOneById(long id){
+    public Mono<Order> getOneById(int id){
         return orderRepo.findById(id);
     }
     public Mono<Order> saveOrder(Order order){
         return orderRepo.save(order);
     }
-    public Mono<Void> deleteOrder(long id){
+    public Mono<Void> deleteOrder(int id){
         return orderRepo.deleteById(id);
     }
 

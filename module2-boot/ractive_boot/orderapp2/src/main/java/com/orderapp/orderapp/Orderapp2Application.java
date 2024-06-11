@@ -8,7 +8,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.r2dbc.repository.config.EnableR2dbcRepositories;
 
-@EnableR2dbcRepositories
+@EnableR2dbcRepositories("com.orderapp.orderapp.repository")
 @SpringBootApplication
 public class Orderapp2Application implements CommandLineRunner {
 
@@ -22,6 +22,6 @@ public class Orderapp2Application implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		System.out.println("--------------------------------------------");
-		orderRepo.save(new Order(3L,9800.00));
+
 	}
 }

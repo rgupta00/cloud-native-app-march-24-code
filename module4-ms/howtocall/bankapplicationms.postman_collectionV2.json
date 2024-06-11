@@ -1,0 +1,300 @@
+{
+	"info": {
+		"_postman_id": "eff30882-a446-4e54-a106-4d11d4c443ba",
+		"name": "bankapplicationms",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1432109"
+	},
+	"item": [
+		{
+			"name": "loans",
+			"item": [
+				{
+					"name": "getByMobile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/loans?mobile=7088993300",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"loans"
+							],
+							"query": [
+								{
+									"key": "mobile",
+									"value": "7088993300"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contact-info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/contact-info",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"contact-info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/actuator/refresh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"actuator",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cards",
+			"item": [
+				{
+					"name": "getByMobile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/cards?mobile=7088993300",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"cards"
+							],
+							"query": [
+								{
+									"key": "mobile",
+									"value": "7088993300"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contact-info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/contact-info",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"contact-info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actuator",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "refresh",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/actuator/refresh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"actuator",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "accounts",
+			"item": [
+				{
+					"name": "getByMobile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/accounts?mobile=7088993300",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"accounts"
+							],
+							"query": [
+								{
+									"key": "mobile",
+									"value": "7088993300"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getallaccounts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/cards?mobile=7788993300",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"cards"
+							],
+							"query": [
+								{
+									"key": "mobile",
+									"value": "7788993300"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "accountsdetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/accountsdetails?mobile=7088993300",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"accountsdetails"
+							],
+							"query": [
+								{
+									"key": "mobile",
+									"value": "7088993300"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contact-info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/contact-info",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"contact-info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/refresh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "configserver",
+			"item": [
+				{
+					"name": "loans",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8071/loans/prod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8071",
+							"path": [
+								"loans",
+								"prod"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
