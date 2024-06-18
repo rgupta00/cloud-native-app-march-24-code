@@ -1,0 +1,51 @@
+server:
+  port: 8071
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+#          uri: file:///C:/configfiles
+          uri: "https://github.com/rgupta00/configfiles.git"
+          clone-on-start: true
+          default-label: main
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8070/eureka/
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  health:
+    readinessstate:
+      enabled: true
+    livenessstate:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      probes:
+        enabled: true
+    shutdown:
+      enabled: true
+  info:
+    env:
+      enabled: true
+build:
+  version: "1.0"
+info:
+  message: "Welcome to busycoder configserver default profile"
+  name: "Raj: Product Owner configserver default profile"
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
