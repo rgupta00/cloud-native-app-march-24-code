@@ -1,0 +1,21 @@
+dependencies:
+- name: busycoder-common
+  repository: file://../../busycoder-common
+  version: 0.1.0
+- name: configserver
+  repository: file://../../busycoder-services/configserver
+  version: 0.1.0
+- name: eurekaserver
+  repository: file://../../busycoder-services/eurekaserver
+  version: 0.1.0
+- name: accounts
+  repository: file://../../busycoder-services/accounts
+  version: 0.1.0
+- name: cards
+  repository: file://../../busycoder-services/cards
+  version: 0.1.0
+- name: loans
+  repository: file://../../busycoder-services/loans
+  version: 0.1.0
+digest: sha256:a57442c004f342fcee084b7a8afcc2103b4df07f9becec110a9d81fc7694f2c4
+generated: "2024-07-06T11:20:17.2014255+05:30"

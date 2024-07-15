@@ -1,0 +1,25 @@
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+deploymentName: accounts-deployment
+serviceName: accounts
+appLabel: accounts
+appName: accounts
+
+replicaCount: 1
+
+image:
+  repository: rgupta00/accounts
+  tag: v3
+
+containerPort: 8080
+
+service:
+  type: LoadBalancer
+  port: 8080
+  targetPort: 8080
+
+appname_enabled: true
+profile_enabled: true
+config_enabled: true
+eureka_enabled: true

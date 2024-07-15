@@ -1,0 +1,43 @@
+server:
+  port: 8090
+spring:
+  config:
+    import: optional:configserver:http://localhost:8071
+  profiles:
+    active:
+      - "qa"
+  application:
+    name: loans
+  jpa:
+    show-sql: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8070/eureka/
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      enabled: true
+  info:
+    env:
+      enabled: true
+info:
+  message: "welcome to loan application default profile"
+  name: "raj default profile"
+
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"

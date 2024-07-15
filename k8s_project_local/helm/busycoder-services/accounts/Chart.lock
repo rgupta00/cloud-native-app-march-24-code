@@ -1,0 +1,6 @@
+dependencies:
+- name: busycoder-common
+  repository: file://../../busycoder-common
+  version: 0.1.0
+digest: sha256:4a0844c59ecbd4fa144719036c8851b971562f31453bf4e7a161ebbf8df00431
+generated: "2024-07-06T11:06:31.7163497+05:30"

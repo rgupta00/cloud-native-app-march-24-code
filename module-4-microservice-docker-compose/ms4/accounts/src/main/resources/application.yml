@@ -1,0 +1,40 @@
+#spring.main.allow-bean-definition-overriding=true
+server:
+  port: 8080
+spring:
+  config:
+    import: optional:configserver:http://localhost:8071
+  main:
+    allow-bean-definition-overriding: true
+  profiles:
+    active:
+      - "qa"
+  application:
+    name: accounts
+  jpa:
+    show-sql: true
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8070/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readinessstate:
+      enabled: true
+    livenessstate:
+      enabled: true
+  endpoint:
+    health:
+      probes:
+        enabled: true
+info:
+  message: "welcome to accounts application default profile"
+  name: "raj default profile accounts"

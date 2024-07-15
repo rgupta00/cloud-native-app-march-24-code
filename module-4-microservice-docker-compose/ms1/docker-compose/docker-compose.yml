@@ -1,0 +1,37 @@
+services:
+  accounts:
+    image: "rgupta00/accounts:v1"
+    container_name: accounts-ms
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - busycoder
+  loans:
+    image: "rgupta00/loans:v1"
+    container_name: loans-ms
+    ports:
+      - "8090:8090"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - busycoder
+  cards:
+    image: "rgupta00/cards:v1"
+    container_name: cards-ms
+    ports:
+      - "9090:9090"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - busycoder
+networks:
+  busycoder:
+    driver: "bridge"

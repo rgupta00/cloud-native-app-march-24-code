@@ -1,0 +1,78 @@
+services:
+  configserver:
+    image: "rgupta00/configserver:v2"
+    container_name: configserver-ms
+    ports:
+      - "8071:8071"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    healthcheck:
+      test: "curl --fail --silent localhost:8071/actuator/health/readiness | grep UP || exit 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    networks:
+      - busycoder
+
+  accounts:
+    image: "rgupta00/accounts:v2"
+    container_name: accounts-ms
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    depends_on:
+      configserver:
+        condition: service_healthy
+    networks:
+      - busycoder
+    environment:
+      SPRING_APPLICATION_NAME: "accounts"
+      SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071/"
+      SPRING_PROFILES_ACTIVE: default
+
+  loans:
+    image: "rgupta00/loans:v2"
+    container_name: loans-ms
+    ports:
+      - "8090:8090"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    depends_on:
+      configserver:
+        condition: service_healthy
+    networks:
+      - busycoder
+    environment:
+      SPRING_APPLICATION_NAME: "loans"
+      SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071/"
+      SPRING_PROFILES_ACTIVE: default
+
+  cards:
+    image: "rgupta00/cards:v2"
+    container_name: cards-ms
+    ports:
+      - "9090:9090"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    depends_on:
+      configserver:
+        condition: service_healthy
+    networks:
+      - busycoder
+    environment:
+      SPRING_APPLICATION_NAME: "cards"
+      SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071/"
+      SPRING_PROFILES_ACTIVE: default
+networks:
+  busycoder:
+    driver: "bridge"
